@@ -1,0 +1,1 @@
+// Just for a Vscode extension to work
