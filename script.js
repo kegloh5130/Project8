@@ -4,6 +4,18 @@
  * @param {String} page 
  */
 function switchPage(page) {
+    const existPage = pagesData.findIndex((item) => {
+        return Object.keys(item)[0].includes(page);
+    });
+
+    if(existPage !== -1){
+        $("main").html(pagesData[existPage][page]);
+         history.pushState(null, '', `/pages/${page}.html`);
+        $("title").text(titleCase(page));
+        localStorage.setItem("lastPage", page);
+        return;
+    }
+    try{
     $.ajax({
         url: `/pages/${page}.html`,
         method: "GET",
@@ -12,14 +24,17 @@ function switchPage(page) {
             $("main").html(data);
             history.pushState(null, '', `/pages/${page}.html`);
             localStorage.setItem("lastPage", page);
-
+            pagesData.push({[page]:data});
             $("title").text(titleCase(page));
         },
         error: function (error) {
             let message = "Sorry! The Page did not load!";
             $("main").text(message);
         }
-    })
+    })}
+    catch(err){
+        console.log(err)
+    }
 }
 /**
  * Return a title case item
@@ -29,6 +44,7 @@ function switchPage(page) {
 function titleCase(item){
     return item[0].toUpperCase() + item.slice(1,item.length);
 }
+const pagesData = [];
 /**
  * This will excute when the document is fulley loaded
  */
