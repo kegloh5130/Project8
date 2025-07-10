@@ -93,7 +93,6 @@ function desCityBuilder(item) {
     console.log(Object.keys(itemD.cityTop))
     Object.keys(itemD.cityTop).forEach((item,index) => {
         $("."+item).text(Object.values(itemD.cityTop)[index])
-        console.log(Object.values(itemD.cityTop),index);
     })
 }
 /**
