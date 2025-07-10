@@ -24,6 +24,7 @@ function switchPage(page) {
             success: (data) => {
                 $("main").html(data);
                 localStorage.setItem("lastPage", page);
+                $("title").text(titleCase(isPageDes ? "destinations" : page));
                 if (isPageDes) {
                     let cityName = page.slice(4, page.length);
                     const itemD = cities.find((val) => val.cityName.includes(cityName));
@@ -60,50 +61,49 @@ function titleCase(item) {
 }
 const pagesData = [];
 let cities = [];
-$.getJSON("data/cities.json", (data) => {
-    cities = data.data;
-})
 /**
  * This fills the destinations page with a item also fills the wonder
  * @param {Object} item 
  */
 function desCityBuilder(item) {
     const itemD = cities.find((val) => val.cityName.includes(item)),
-        crumbs = $("<h5/>").text(itemD.cityName);
+        crumbs = $("<h5/>").text(itemD.cityName).addClass("text-accent underline bold");
     $(".des-head img").attr("src", itemD.cityBannerImg);
     $(".des-head h1").text(itemD.cityName);
     $(".des-description").text(itemD.cityDescription)
     $(".des-loc").text(itemD.cityLoc)
     $(".des-attr").text(itemD.cityAttribute)
     $(".des-crumbs").append(crumbs);
+    $(".city-wonder").text(itemD.cityName)
     // Builds Wonders
     const wonders = itemD.cityWonders;
-    /**
-     * div
-     *      img -> wonderImg
-     *      h4 -> wonderName
-     *      p -> wonderDescription
-    */
     const wondersEle = wonders.map((item) => {
         let container = $("<div>").addClass("rounded p-2 text-white flex flex-col space-y-2 size-full mx-auto md:mx-0"),
-            name = $("<h4/>").addClass("text-xl").text(item.wonderName),
-            img = $("<img/>").addClass("rounded object-cover size-[20rem] md:size-[40rem] shadow-sm").attr("src", item.wonderImg),
-            description = $("<p>").addClass("text-sm w-full").text(item.wonderDescription);
-        container.append(img, name, description);
+            textContainer = $("<div>").addClass("p-2 flex flex-col space-y-2"),
+            name = $("<h4/>").addClass("md:text-2xl").text(item.wonderName),
+            img = $("<img/>").addClass("rounded-xl object-cover size-[20rem] md:size-[35rem] shadow-sm").attr("src", item.wonderImg),
+            description = $("<p>").addClass("text-sm md:text-xl md:w-[35rem] md:h-[10rem]").text(item.wonderDescription);
+        textContainer.append(name,description)
+        container.append(img, textContainer);
         return container
     });
     for (var item of wondersEle) {
         $(".des-wonder").append(item)
     }
+    console.log(Object.keys(itemD.cityTop))
+    Object.keys(itemD.cityTop).forEach((item,index) => {
+        $("."+item).text(Object.values(itemD.cityTop)[index])
+        console.log(Object.values(itemD.cityTop),index);
+    })
 }
 /**
  * Creates the destinations buttons 
  */
-function desLinkBuilder() {
-    cities.forEach((item) => {
-        let container = $("<div/>").addClass("flex items-center space-x-2 space-y-1 link-btn p-2 hover:bg-accent "),
+function desLinkBuilder(data) {
+    data.forEach((item) => {
+        let container = $("<div/>").addClass("flex items-center space-x-2 space-y-1 p-2 hover:bg-accent "),
             img = $("<img/>").attr("src", item.cityBannerImg).addClass("rounded size-10 "),
-            btn = $("<h5/>").text(item.cityName).addClass("inline hover:cursor-pointer capitalize").attr("routes", "des-" + item.cityName);
+            btn = $("<h5/>").text(item.cityName).addClass("inline hover:cursor-pointer capitalize link-btn ").attr("routes", "des-" + item.cityName);
         container.append(img, btn);
         $(".des-cont").append(container);
     })
@@ -116,19 +116,21 @@ $(document).ready(() => {
     if (localStorage.getItem("lastPage") === null) {
         localStorage.setItem("lastPage", "home");
         switchPage("home", "Home");
-    } else {
-        switchPage(localStorage.getItem("lastPage"), titleCase(localStorage.getItem("lastPage")))
     }
-    desLinkBuilder();
-    // This adds a click event to the nav button; which calls switchPage with the button text
-    $(".link-btn").click((e) => {
-        // E is a event, target is the button, page is in attribute route
-        let route = e.target.getAttribute("routes");
-        switchPage(route);
-        if (String(route).includes("des")) {
-            $(".des-cont").fadeToggle("slow");
+    // This has to be in a particular order as with using cities links 
+    $.getJSON("data/cities.json", (data) => {
+        cities = data.data;
+        desLinkBuilder(cities);
+        if (localStorage.getItem("lastPage") !== null) {
+            switchPage(localStorage.getItem("lastPage"), titleCase(localStorage.getItem("lastPage")))
         }
-
+        // This adds a click event to the nav button; which calls switchPage with the button text
+        $(".link-btn").click((e) => {
+            // E is a event, target is the button, page is in attribute route
+            let route = String(e.target.getAttribute("routes"));
+            switchPage(route);
+            $(".des-cont").fadeOut("slow");
+        })
     })
     $(".des-cont").hide();
     $(".des-btn").click(() => {

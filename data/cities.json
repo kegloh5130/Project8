@@ -1,42 +1,100 @@
 {
     "data": [
         {
-            "cityName": "city-1",
+            "cityName": "Manila",
             "cityBannerImg": "https://placehold.co/400",
             "cityLoc": "North",
-            "cityAttribute": "Costal",
-            "cityDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab delectus voluptatibus magni dignissimos, quos at illum aliquam optio dicta magnam velit harum, praesentium ullam aspernatur earum qui, ad deleniti!",
+            "cityAttribute": "Capital and Metro",
+            "cityDescription": "Manila, the bustling capital of the Philippines, is a vibrant city rich in history, culture, and modern attractions. It serves as the political, economic, and cultural center of the country, offering a mix of old-world charm and contemporary lifestyle. The city is characterized by its lively streets, diverse culinary scene, bustling markets, and a rich tapestry of history reflected in landmarks, museums, and heritage sites. Whether you're exploring the historic Intramuros, shopping in modern malls, or enjoying the vibrant nightlife, Manila provides an energetic and dynamic environment that captures the essence of Filipino resilience and hospitality.",
             "cityWonders": [
                 {
-                    "wonderName": "Wonder Title",
+                    "wonderName": "Intramuros",
                     "wonderImg": "https://placehold.co/200",
-                    "wonderDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab delectus voluptatibus magni dignissimos, quos at illum aliquam optio dicta magnam velit harum, praesentium ullam aspernatur earum qui, ad deleniti!"
+                    "wonderDescription": "Intramuros is the historic walled city at the heart of Manila. It features Spanish-era architecture, centuries-old churches, and museums that showcase the Philippines' colonial past."
                 },
                 {
-                    "wonderName": "Wonder Title2",
+                    "wonderName": "Rizal Park",
                     "wonderImg": "https://placehold.co/200",
-                    "wonderDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab delectus voluptatibus magni dignissimos, quos at illum aliquam optio dicta magnam velit harum, praesentium ullam aspernatur earum qui, ad deleniti!"
+                    "wonderDescription": "Rizal Park, also known as Luneta Park, is a historical urban park dedicated to Dr. Jose Rizal, the national hero. It is a popular spot for leisure, picnics, and commemorative events."
                 },
                 {
-                    "wonderName": "Wonder Title3",
+                    "wonderName": "Fort Santiago",
                     "wonderImg": "https://placehold.co/200",
-                    "wonderDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab delectus voluptatibus magni dignissimos, quos at illum aliquam optio dicta magnam velit harum, praesentium ullam aspernatur earum qui, ad deleniti!"
+                    "wonderDescription": "Fort Santiago is a historic fortress within Intramuros, serving as a key military defense structure during the Spanish colonial period. It now houses museums and memorials related to Philippine history."
                 }
-            ]
+            ],
+            "cityTop": {
+                "topSights": "Intramuros, Rizal Park, Fort Santiago, Manila Ocean Park, National Museum Complex",
+                "topSeason": "Dry season (December to May) is ideal for outdoor activities; avoid the rainy season from June to November",
+                "topTransport": "Jeepneys, taxis, ride-sharing apps, and Manila's MRT and LRT rail systems",
+                "topFreeSights": "Rizal Park, Chinatown, Baywalk promenade, Greenbelt Park",
+                "topHood": "Binondo (Chinatown), Makati Central Business District, Malate for nightlife, Intramuros for history",
+                "topEquipment": "Comfortable walking shoes, sun protection, portable charger, camera"
+            }
         },
         {
-            "cityName": "city-2",
+            "cityName": "Cebu",
             "cityBannerImg": "https://placehold.co/400",
-            "cityLoc": "North",
-            "cityAttribute": "Capital",
-            "cityDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab delectus voluptatibus magni dignissimos, quos at illum aliquam optio dicta magnam velit harum, praesentium ullam aspernatur earum qui, ad deleniti!",
+            "cityLoc": "Visayas",
+            "cityAttribute": "Historical and Tourist Spot",
+            "cityDescription": "Cebu is known as the Queen City of the South, famous for its rich history, beautiful beaches, and vibrant culture. It is a gateway to some of the Philippines' most stunning natural attractions and historical sites. The city boasts a lively urban atmosphere complemented by a variety of shopping malls, restaurants, and cultural festivals. Beyond the city, visitors can explore pristine beaches, diving spots, and waterfalls, making Cebu a perfect destination for both history enthusiasts and adventure seekers. Its friendly locals, flavorful cuisine, and scenic landscapes make Cebu an unforgettable experience for travelers seeking a blend of tradition and nature.",
             "cityWonders": [
                 {
-                    "wonderName": "W1",
-                    "wonderImg": "https://placehold.co/400",
-                    "wonderDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab delectus voluptatibus magni dignissimos, quos at illum aliquam optio dicta magnam velit harum, praesentium ullam aspernatur earum qui, ad deleniti!"
+                    "wonderName": "Magellan's Cross",
+                    "wonderImg": "https://placehold.co/200",
+                    "wonderDescription": "Magellan's Cross is a historic Christian relic planted by Portuguese explorers led by Ferdinand Magellan upon arriving in Cebu in 1521. It symbolizes the arrival of Christianity in the Philippines."
+                },
+                {
+                    "wonderName": "Fort San Pedro",
+                    "wonderImg": "https://placehold.co/200",
+                    "wonderDescription": "Fort San Pedro is the oldest and smallest fort in the Philippines, built by the Spanish under the command of Miguel Lopez de Legazpi. It now functions as a museum showcasing Cebu's history."
+                },
+                {
+                    "wonderName": "Kawasan Falls",
+                    "wonderImg": "https://placehold.co/200",
+                    "wonderDescription": "Kawasan Falls is a famous multi-tiered waterfall located in the mountainous village of Badian. It is known for its crystal-clear blue waters and is a popular destination for canyoneering and swimming."
                 }
-            ]
+            ],
+            "cityTop": {
+                "topSights": "Magellan's Cross, Fort San Pedro, Kawasan Falls, Osmeña Peak, Taoist Temple",
+                "topSeason": "Dry season (December to May) for beach and outdoor activities; rainy season (June to November) offers lush scenery",
+                "topTransport": "Jeepneys, tricycles, taxis, car rentals, and domestic flights",
+                "topFreeSights": "Colon Street, Carbon Market, Santo Niño Basilica grounds",
+                "topHood": "Lahug for nightlife, Mactan Island for beaches and resorts, downtown Cebu for shopping and dining",
+                "topEquipment": "Swimwear, snorkeling gear, hiking shoes, insect repellent"
+            }
+        },
+        {
+            "cityName": "Davao",
+            "cityBannerImg": "https://placehold.co/400",
+            "cityLoc": "Mindanao",
+            "cityAttribute": "Nature and Adventure",
+            "cityDescription": "Davao is a vibrant city in Mindanao known for its natural beauty, eco-tourism spots, and friendly locals. It offers a perfect blend of urban living and outdoor adventure, making it a must-visit destination. The city is characterized by lush landscapes, protected parks, and mountains, including the iconic Mount Apo. Davao also boasts a rich cultural heritage, with various indigenous communities and festivals celebrating local traditions. Its clean and safe environment, along with its thriving markets, delicious local cuisine, and adventure opportunities, make Davao a compelling destination for travelers seeking both relaxation and thrill-seeking experiences.",
+            "cityWonders": [
+                {
+                    "wonderName": "Mount Apo",
+                    "wonderImg": "https://placehold.co/200",
+                    "wonderDescription": "Mount Apo is the highest peak in the Philippines and a popular mountaineering destination. Its summit offers breathtaking views and a chance to explore diverse flora and fauna."
+                },
+                {
+                    "wonderName": "Eden Nature Park",
+                    "wonderImg": "https://placehold.co/200",
+                    "wonderDescription": "Eden Nature Park is a mountain resort and eco-park that offers outdoor activities like hiking, zip-lining, and wildlife viewing amidst lush greenery and cool climate."
+                },
+                {
+                    "wonderName": "People's Park",
+                    "wonderImg": "https://placehold.co/200",
+                    "wonderDescription": "People's Park in Davao is a spacious urban park with beautiful gardens, sculptures, and recreational facilities. It is a popular spot for locals and tourists to relax and enjoy nature."
+                }
+            ],
+            "cityTop": {
+                "topSights": "Mount Apo, Eden Nature Park, People’s Park, Samal Island, Malagos Garden Resort",
+                "topSeason": "Dry season (December to May) is best for outdoor adventures; the rainy season (June to November) offers lush scenery but can be challenging for trekking",
+                "topTransport": "Jeepneys, taxis, tricycles, car rentals, and domestic flights to Davao International Airport",
+                "topFreeSights": "People’s Park, Magsaysay Park, Davao Crocodile Park (entry fee applies), local markets",
+                "topHood": "Roxas Avenue for dining, Matina for nightlife, Samal Island for beaches and resorts",
+                "topEquipment": "Hiking gear, insect repellent, sun protection, camera"
+            }
         }
     ]
 }
