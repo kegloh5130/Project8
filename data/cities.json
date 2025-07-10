@@ -2,24 +2,25 @@
     "data": [
         {
             "cityName": "Manila",
-            "cityBannerImg": "https://placehold.co/400",
+            "cityBannerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Ph_seal_ncr_manila.svg/1920px-Ph_seal_ncr_manila.svg.png",
+            "cityLargeImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Intramuros%2C_Manila%2C_Philippines.jpg/2560px-Intramuros%2C_Manila%2C_Philippines.jpg",
             "cityLoc": "North",
             "cityAttribute": "Capital and Metro",
             "cityDescription": "Manila, the bustling capital of the Philippines, is a vibrant city rich in history, culture, and modern attractions. It serves as the political, economic, and cultural center of the country, offering a mix of old-world charm and contemporary lifestyle. The city is characterized by its lively streets, diverse culinary scene, bustling markets, and a rich tapestry of history reflected in landmarks, museums, and heritage sites. Whether you're exploring the historic Intramuros, shopping in modern malls, or enjoying the vibrant nightlife, Manila provides an energetic and dynamic environment that captures the essence of Filipino resilience and hospitality.",
             "cityWonders": [
                 {
                     "wonderName": "Intramuros",
-                    "wonderImg": "https://placehold.co/200",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/PuertaDeParian2.JPG/1280px-PuertaDeParian2.JPG",
                     "wonderDescription": "Intramuros is the historic walled city at the heart of Manila. It features Spanish-era architecture, centuries-old churches, and museums that showcase the Philippines' colonial past."
                 },
                 {
                     "wonderName": "Rizal Park",
-                    "wonderImg": "https://placehold.co/200",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Rizal_Monument.jpg/1920px-Rizal_Monument.jpg",
                     "wonderDescription": "Rizal Park, also known as Luneta Park, is a historical urban park dedicated to Dr. Jose Rizal, the national hero. It is a popular spot for leisure, picnics, and commemorative events."
                 },
                 {
                     "wonderName": "Fort Santiago",
-                    "wonderImg": "https://placehold.co/200",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/38923-Manila_%2835201250583%29.jpg/1280px-38923-Manila_%2835201250583%29.jpg",
                     "wonderDescription": "Fort Santiago is a historic fortress within Intramuros, serving as a key military defense structure during the Spanish colonial period. It now houses museums and memorials related to Philippine history."
                 }
             ],
@@ -34,24 +35,25 @@
         },
         {
             "cityName": "Cebu",
-            "cityBannerImg": "https://placehold.co/400",
+            "cityBannerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Cebu_City_seal.svg/1920px-Cebu_City_seal.svg.png",
+            "cityLargeImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Cebu_city_skyline_2025.jpg/500px-Cebu_city_skyline_2025.jpg",
             "cityLoc": "Visayas",
             "cityAttribute": "Historical and Tourist Spot",
             "cityDescription": "Cebu is known as the Queen City of the South, famous for its rich history, beautiful beaches, and vibrant culture. It is a gateway to some of the Philippines' most stunning natural attractions and historical sites. The city boasts a lively urban atmosphere complemented by a variety of shopping malls, restaurants, and cultural festivals. Beyond the city, visitors can explore pristine beaches, diving spots, and waterfalls, making Cebu a perfect destination for both history enthusiasts and adventure seekers. Its friendly locals, flavorful cuisine, and scenic landscapes make Cebu an unforgettable experience for travelers seeking a blend of tradition and nature.",
             "cityWonders": [
                 {
                     "wonderName": "Magellan's Cross",
-                    "wonderImg": "https://placehold.co/200",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Magellan%27s_Cross_2024-07-05.jpg/2560px-Magellan%27s_Cross_2024-07-05.jpg",
                     "wonderDescription": "Magellan's Cross is a historic Christian relic planted by Portuguese explorers led by Ferdinand Magellan upon arriving in Cebu in 1521. It symbolizes the arrival of Christianity in the Philippines."
                 },
                 {
                     "wonderName": "Fort San Pedro",
-                    "wonderImg": "https://placehold.co/200",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Fort_San_Pedro%2C_Cebu_City%2C_Jan_2024.jpg/2560px-Fort_San_Pedro%2C_Cebu_City%2C_Jan_2024.jpg",
                     "wonderDescription": "Fort San Pedro is the oldest and smallest fort in the Philippines, built by the Spanish under the command of Miguel Lopez de Legazpi. It now functions as a museum showcasing Cebu's history."
                 },
                 {
                     "wonderName": "Kawasan Falls",
-                    "wonderImg": "https://placehold.co/200",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/0/03/Lets_go_to_Kawasan_Falls.jpg",
                     "wonderDescription": "Kawasan Falls is a famous multi-tiered waterfall located in the mountainous village of Badian. It is known for its crystal-clear blue waters and is a popular destination for canyoneering and swimming."
                 }
             ],
@@ -66,24 +68,25 @@
         },
         {
             "cityName": "Davao",
-            "cityBannerImg": "https://placehold.co/400",
+            "cityBannerImg": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Davao_City_Ph_official_seal.png",
+            "cityLargeImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Davao_Poblacion_District_skyline_Bajada_%28Davao_City%3B_08-22-2023%29.jpg/2560px-Davao_Poblacion_District_skyline_Bajada_%28Davao_City%3B_08-22-2023%29.jpg",
             "cityLoc": "Mindanao",
             "cityAttribute": "Nature and Adventure",
             "cityDescription": "Davao is a vibrant city in Mindanao known for its natural beauty, eco-tourism spots, and friendly locals. It offers a perfect blend of urban living and outdoor adventure, making it a must-visit destination. The city is characterized by lush landscapes, protected parks, and mountains, including the iconic Mount Apo. Davao also boasts a rich cultural heritage, with various indigenous communities and festivals celebrating local traditions. Its clean and safe environment, along with its thriving markets, delicious local cuisine, and adventure opportunities, make Davao a compelling destination for travelers seeking both relaxation and thrill-seeking experiences.",
             "cityWonders": [
                 {
                     "wonderName": "Mount Apo",
-                    "wonderImg": "https://placehold.co/200",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tuktok_ng_Pilipinas.jpg/2560px-Tuktok_ng_Pilipinas.jpg",
                     "wonderDescription": "Mount Apo is the highest peak in the Philippines and a popular mountaineering destination. Its summit offers breathtaking views and a chance to explore diverse flora and fauna."
                 },
                 {
                     "wonderName": "Eden Nature Park",
-                    "wonderImg": "https://placehold.co/200",
+                    "wonderImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSrx6hVeh6kmD-UCkv86r8dLmzLwrFJ59EB4pt9c_IXzque99g9CnIEwT2_KetmwvjazBKfD0DBReDefQUlIn3eWGvx3F28EF7xHUNw8NzlIlP7G_zrumVNjDQbnGW2JmXgl3lX-xJWUQ/s640/eden.jpg",
                     "wonderDescription": "Eden Nature Park is a mountain resort and eco-park that offers outdoor activities like hiking, zip-lining, and wildlife viewing amidst lush greenery and cool climate."
                 },
                 {
                     "wonderName": "People's Park",
-                    "wonderImg": "https://placehold.co/200",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Peoples_Park._%285032255217%29.jpg/2880px-Peoples_Park._%285032255217%29.jpg",
                     "wonderDescription": "People's Park in Davao is a spacious urban park with beautiful gardens, sculptures, and recreational facilities. It is a popular spot for locals and tourists to relax and enjoy nature."
                 }
             ],
@@ -94,6 +97,204 @@
                 "topFreeSights": "People’s Park, Magsaysay Park, Davao Crocodile Park (entry fee applies), local markets",
                 "topHood": "Roxas Avenue for dining, Matina for nightlife, Samal Island for beaches and resorts",
                 "topEquipment": "Hiking gear, insect repellent, sun protection, camera"
+            }
+        },
+        {
+            "cityName": "Vigan",
+            "cityBannerImg": "https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Seal_of_Vigan.gif/250px-Seal_of_Vigan.gif",
+            "cityLargeImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Calle_Crisologo%2C_Vigan%2C_Philippines_-_One_of_The_New_7_Wonder_Cities_of_The_World.jpg/2560px-Calle_Crisologo%2C_Vigan%2C_Philippines_-_One_of_The_New_7_Wonder_Cities_of_The_World.jpg",
+            "cityLoc": "Northwest Luzon",
+            "cityAttribute": "Heritage and Culture",
+            "cityDescription": "Vigan is a UNESCO World Heritage Site known for its well-preserved Spanish colonial architecture and cobblestone streets. It offers a glimpse into the Philippines' colonial past with its ancestral houses, historic churches, and vibrant cultural scene. Visitors can enjoy traditional Filipino cuisine, horse-drawn carriages, and the charming ambiance of this historic city, making it a must-visit for history and culture enthusiasts.",
+            "cityWonders": [
+                {
+                    "wonderName": "Vigan Heritage Village",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Landing_Fields_-_Philippines_-_Luzon_Island_-_NARA_-_68161222.jpg/2560px-Landing_Fields_-_Philippines_-_Luzon_Island_-_NARA_-_68161222.jpg",
+                    "wonderDescription": "A beautifully preserved district with Spanish colonial architecture, ancestral houses, and cobblestone streets that transport visitors back in time."
+                },
+                {
+                    "wonderName": "St. Paul Metropolitan Cathedral",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Vigan_Cathedral%2C_Vigan_%2C_Ilocos_Sur.JPG/500px-Vigan_Cathedral%2C_Vigan_%2C_Ilocos_Sur.JPG",
+                    "wonderDescription": "An iconic baroque church with a rich history, located in Vigan's Heritage Village."
+                },
+                {
+                    "wonderName": "Bantay Bell Tower",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/6/68/Bantay_Watchtower_in_Bantay%2C_Ilocos_Sur.jpg",
+                    "wonderDescription": "A historic bell tower with panoramic views of Vigan and the surrounding countryside."
+                }
+            ],
+            "cityTop": {
+                "topSights": "Vigan Heritage Village, St. Paul Cathedral, Bantay Bell Tower, Calle Crisologo",
+                "topSeason": "Dry season (November to April) is best for exploring; rainy season from May to October",
+                "topTransport": "Kalesa (horse-drawn carriages), tricycles, walking tours",
+                "topFreeSights": "Calle Crisologo, Plaza Salcedo, Syquia Mansion grounds",
+                "topHood": "Calle Crisologo for shopping and dining, Pagburnayan Jar Factory",
+                "topEquipment": "Comfortable walking shoes, camera"
+            }
+        },
+        {
+            "cityName": "Baguio",
+            "cityBannerImg": "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Ph_seal_Baguio.png/250px-Ph_seal_Baguio.png",
+            "cityLargeImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Baguio_city_proper_overlooking_Burnham-Harrison_side_%28Baguio_city%3B_12-04-2022%29.jpg/2560px-Baguio_city_proper_overlooking_Burnham-Harrison_side_%28Baguio_city%3B_12-04-2022%29.jpg",
+            "cityLoc": "North Luzon",
+            "cityAttribute": "Summer Capital & Mountain Retreat",
+            "cityDescription": "Baguio is known as the Summer Capital of the Philippines, offering cool climate, scenic mountain views, and vibrant arts and crafts. It’s a popular getaway for locals escaping the heat, with attractions like parks, gardens, and markets selling local products. The city’s pine trees, colorful churches, and bustling night markets create a lively and refreshing atmosphere that blends natural beauty with cultural vibrancy.",
+            "cityWonders": [
+                {
+                    "wonderName": "Burnham Park",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Burnham_Park_Rose_Garden_with_city_hall_view_%28Baguio_City%3B_12-04-2022%29.jpg/2560px-Burnham_Park_Rose_Garden_with_city_hall_view_%28Baguio_City%3B_12-04-2022%29.jpg",
+                    "wonderDescription": "A central park with boat rentals, playgrounds, and gardens, perfect for relaxation."
+                },
+                {
+                    "wonderName": "Machu Picchu Replica",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Overlooking_Baguio_City.jpg/2880px-Overlooking_Baguio_City.jpg",
+                    "wonderDescription": "A popular spot for photo ops, showcasing a mini replica of the famous Incan site."
+                },
+                {
+                    "wonderName": "Strawberry Farm",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Strawberry_Picking_La_Trinidad_2018.jpg/2880px-Strawberry_Picking_La_Trinidad_2018.jpg",
+                    "wonderDescription": "A hillside farm where visitors can pick fresh strawberries and enjoy panoramic views."
+                }
+            ],
+            "cityTop": {
+                "topSights": "Burnham Park, The Mansion, Mines View Park, Strawberry Farm, Camp John Hay",
+                "topSeason": "Cool dry months from December to February; hot and rainy from March to May",
+                "topTransport": "Jeepneys, taxis, tricycles, walking tours",
+                "topFreeSights": "Burnham Park, Baguio Cathedral grounds",
+                "topHood": "Session Road for shopping and dining, Mines View Park for views",
+                "topEquipment": "Warm clothing, walking shoes, camera"
+            }
+        },
+        {
+            "cityName": "Ilocos Norte",
+            "cityBannerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Seal_of_Ilocos_Norte.png/250px-Seal_of_Ilocos_Norte.png",
+            "cityLargeImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Bangui_Bangui_Wind_Farm_east_%28Bangui%2C_Ilocos_Norte%3B_11-17-2022%29.jpg/500px-Bangui_Bangui_Wind_Farm_east_%28Bangui%2C_Ilocos_Norte%3B_11-17-2022%29.jpg",
+            "cityLoc": "Northwest Luzon",
+            "cityAttribute": "Heritage and Nature",
+            "cityDescription": "Ilocos Norte is a province known for its stunning landscapes, historic sites, and unique culture. It features impressive sand dunes, ancient churches, and traditional Filipino architecture. Visitors can explore the historic city of Laoag, visit the iconic Bangui Windmills, and experience the majestic Paoay Church, a UNESCO World Heritage Site. The region offers a rich blend of natural beauty and cultural heritage, making it a diverse destination for travelers seeking history, adventure, and scenic views.",
+            "cityWonders": [
+                {
+                    "wonderName": "Sand Dunes of Laoag",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/La_Paz_Sand_Dunes_Scenery.jpg/960px-La_Paz_Sand_Dunes_Scenery.jpg",
+                    "wonderDescription": "Expansive sand dunes perfect for sandboarding, ATV rides, and scenic adventures."
+                },
+                {
+                    "wonderName": "Paoay Church",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Paoay_Church_In_Ilocos_Norte.JPG",
+                    "wonderDescription": "A UNESCO World Heritage Site, famous for its massive earthquake-resistant architecture."
+                },
+                {
+                    "wonderName": "Bangui Windmills",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Ilocos_Norte_Bangui_Windmills_LVS.jpg/960px-Ilocos_Norte_Bangui_Windmills_LVS.jpg",
+                    "wonderDescription": "A series of iconic wind turbines along the coast, symbolizing renewable energy and scenic beauty."
+                }
+            ],
+            "cityTop": {
+                "topSights": "Paoay Church, Sand Dunes, Bangui Windmills, Cape Bojeador Lighthouse",
+                "topSeason": "Dry season from December to May; rainy months June to November",
+                "topTransport": "Tricycles, jeepneys, rented motorcycles, car rentals",
+                "topFreeSights": "Paoay Church grounds, sand dunes",
+                "topHood": "Laoag City center, nearby beaches, and resorts",
+                "topEquipment": "Sun protection, comfortable shoes, camera"
+            }
+        },
+        {
+            "cityName": "Bohol",
+            "cityBannerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Bohol_Seal_1.svg/250px-Bohol_Seal_1.svg.png",
+            "cityLargeImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Chocolate_Hills_Bohol_Philippines.jpg/500px-Chocolate_Hills_Bohol_Philippines.jpg",
+            "cityLoc": "Central Visayas",
+            "cityAttribute": "Nature and Heritage",
+            "cityDescription": "Bohol is famous for the Chocolate Hills, tarsier sanctuaries, and its rich coastal scenery. It offers a unique blend of natural wonders, cultural heritage, and eco-tourism activities. Visitors can enjoy river cruises, visit centuries-old churches, and explore lush rice terraces. Bohol’s friendly locals, pristine beaches, and vibrant marine life make it a perfect destination for nature lovers and adventure seekers alike.",
+            "cityWonders": [
+                {
+                    "wonderName": "Chocolate Hills",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Chocolate_Hills_Bohol.JPG/960px-Chocolate_Hills_Bohol.JPG",
+                    "wonderDescription": "Unique geological formation with over 1,200 small mounds that turn brown in the dry season, resembling chocolates."
+                },
+                {
+                    "wonderName": "Tarsier Sanctuary",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/5/59/Tarsier-GG.jpg",
+                    "wonderDescription": "A sanctuary that protects the tiny tarsiers, one of the world’s smallest primates."
+                },
+                {
+                    "wonderName": "Loboc River Cruise",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Loboc_river_cruise_Bohol_2017.jpg/1599px-Loboc_river_cruise_Bohol_2017.jpg?20170801171036",
+                    "wonderDescription": "Scenic river cruise with local food, cultural performances, and lush surroundings."
+                }
+            ],
+            "cityTop": {
+                "topSights": "Chocolate Hills, Tarsier Sanctuary, Loboc River, Baclayon Church",
+                "topSeason": "Dry season from December to May; rainy season June to November",
+                "topTransport": "Tricycles, motorbike rentals, boat tours, local vans",
+                "topFreeSights": "Bohol Bee Farm, Loboc River banks",
+                "topHood": "Tagbilaran City, Panglao Island for beaches and resorts",
+                "topEquipment": "Camera, sun protection, comfortable shoes"
+            }
+        },
+        {
+            "cityName": "Samar",
+            "cityBannerImg": "https://upload.wikimedia.org/wikipedia/commons/7/77/Ph_seal_samar.png",
+            "cityLargeImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/San_Juanico_Bridge_sunset_lighted_%28Tacloban%2C_Leyte%3B_09-08-2022%29.jpg/2560px-San_Juanico_Bridge_sunset_lighted_%28Tacloban%2C_Leyte%3B_09-08-2022%29.jpg",
+            "cityLoc": "Eastern Visayas",
+            "cityAttribute": "Nature and Adventure",
+            "cityDescription": "Samar is known for its rugged landscapes, waterfalls, and eco-adventures. It offers pristine beaches, cave explorations, and lush forests. The island is perfect for outdoor enthusiasts seeking a less commercialized, more natural experience. Visitors can explore the Sohoton Caves, go river rafting, or relax on secluded beaches, immersing themselves in unspoiled nature and local culture.",
+            "cityWonders": [
+                {
+                    "wonderName": "Sohoton Cave and Natural Bridge",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sohoton_Natural_Bridge_1.JPG/2560px-Sohoton_Natural_Bridge_1.JPG",
+                    "wonderDescription": "A stunning cave system with crystal-clear waters, natural bridges, and unique rock formations."
+                },
+                {
+                    "wonderName": "Kalanggaman Island",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kalanggaman_Island.jpg/960px-Kalanggaman_Island.jpg",
+                    "wonderDescription": "Known for its long, white sandbar and pristine beaches, perfect for swimming, picnics, and camping."
+                },
+                {
+                    "wonderName": "Tinago Falls",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Tinago_falls.jpg",
+                    "wonderDescription": "A hidden waterfall surrounded by lush greenery, accessible via a steep descent."
+                }
+            ],
+            "cityTop": {
+                "topSights": "Sohoton Caves, Kalanggaman Island, Tinago Falls, Cave Explorations",
+                "topSeason": "Dry season (December to May); rainy season can hinder outdoor activities",
+                "topTransport": "Jeepneys, tricycles, boat tours, motorbikes",
+                "topFreeSights": "Samar Heritage Center, local markets",
+                "topHood": "Basey for cultural crafts, Calbayog for beaches",
+                "topEquipment": "Hiking shoes, waterproof gear, camera"
+            }
+        },
+        {
+            "cityName": "Camiguin",
+            "cityBannerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Camiguin_Seal.svg/250px-Camiguin_Seal.svg.png",
+            "cityLargeImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Timpoong_and_Hibok-Hibok_Natural_Monument_in_Camiguin_-_Allan_Jay_Quesada.jpg/2880px-Timpoong_and_Hibok-Hibok_Natural_Monument_in_Camiguin_-_Allan_Jay_Quesada.jpg",
+            "cityLoc": "Mindanao",
+            "cityAttribute": "Nature & Volcanoes",
+            "cityDescription": "Camiguin is a small volcanic island known as the 'Island Born of Fire' with numerous volcanoes, hot springs, and waterfalls. Its scenic landscapes include white sand beaches, lush forests, and historical sites. Visitors can relax in hot spring resorts, explore the Sunken Cemetery, or hike up Mount Hibok-Hhibok for panoramic views. Camiguin offers a peaceful retreat surrounded by natural beauty, perfect for eco-tourism and adventure.",
+            "cityWonders": [
+                {
+                    "wonderName": "Sto. Niño Cold Spring",
+                    "wonderImg": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/8a/f3/d3/sto-nino-cold-spring.jpg?w=1200&h=-1&s=1",
+                    "wonderDescription": "A natural cold spring with clear waters, ideal for swimming and relaxation."
+                },
+                {
+                    "wonderName": "White Island",
+                    "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/4/44/Hibokwhiteisl.jpg",
+                    "wonderDescription": "A pristine white sandbar with crystal-clear waters, perfect for swimming and sunbathing."
+                },
+                {
+                    "wonderName": "Sunken Cemetery",
+                    "wonderImg": "https://philippinetravels.ph/wp-content/uploads/2023/03/301209636_10227636114598135_7523177111452651749_n-1536x1152.jpg?v=1677737029",
+                    "wonderDescription": "A historic cemetery submerged during a volcanic eruption, now a popular snorkeling site."
+                }
+            ],
+            "cityTop": {
+                "topSights": "White Island, Sunken Cemetery, Katibawasan Falls, Mount Hibok-Hhibok",
+                "topSeason": "Dry season (December to May); rainy season June to November",
+                "topTransport": "Tricycles, boats, rental motorbikes",
+                "topFreeSights": "Old Church Ruins, local beaches",
+                "topHood": "Benoni for hot springs, Mambajao for markets",
+                "topEquipment": "Snorkeling gear, sun protection, hiking shoes"
             }
         }
     ]

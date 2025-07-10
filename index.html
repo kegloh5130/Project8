@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="/img/LogoW.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <style type="text/tailwindcss">
-      @theme {
+    <style type="text/tailwindcss">
+        @theme {
         --color-primary: rgba(14,37,37,0.9);
         --color-secondary: #912f40;
         --color-accent: #264454;
@@ -24,8 +25,9 @@
 
 <body>
     <nav class="flex w-full justify-between bg-primary shadow-lg shadow-zinc-400">
-        <div class="size-10 md:size-20">
-            <!-- <img src="https://placehold.co/400" alt="logo" /> -->
+        <div class="size-10 md:size-35">
+            <img src="/img/logoW.png" alt="logo">
+
         </div>
         <div class=" *:hover:cursor-pointer md:text-2xl md:*:px-20 *:hover:bg-accent *:h-full text-white">
             <button class="link-btn" routes="home">Home</button>
@@ -33,7 +35,8 @@
             <button class="link-btn" routes="package">Package</button>
             <button class="des-btn">Destination</button>
         </div>
-        <div class="absolute text-white bg-primary flex flex-col w-48 rounded-xl right-10 top-21 des-cont  z-1 *:rounded-b-xl">
+        <div
+            class="absolute text-white bg-primary flex flex-col w-[17rem] right-0 top-10 md:right-3.5 md:top-35 des-cont z-1 rounded-b-xl *:hover:rounded-b-xl">
             <h4 class="text-center p-2 ">Top Cities</h4>
         </div>
     </nav>

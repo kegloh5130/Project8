@@ -1,58 +1,72 @@
-
-<section>
-    <div class="des-crumbs *:inline *:text-xs md:*:text-lg capitalize text-left w-fit md:p-5">
+<section class="snap-y overflow-y-auto">
+    <div class="des-crumbs *:inline *:text-xs lg:*:text-lg capitalize text-left w-fit lg:p-5">
         <h5>Destination</h5>
         >
     </div>
-    <div
-        class="des-head justify-center md:justify-normal md:flex-none flex flex-col space-y-3 md:space-y-0 md:flex-row items-center md:p-2 w-full">
-        <div class="md:p-10">
-            <img class="w-72 h-96 md:w-[20rem] md:h-[30rem] rounded object-cover shadow-sm" src="" alt="City image" />
-        </div>
+    <section class="lg:flex lg:justify-center lg:items-cente snap-center">
         <div
-            class="space-y-2 px-2 md:p-10 md:ml-2 mt-auto flex flex-col justify-center items-center md:items-start md:justify-normal md:flex-none">
-            <h1 class="text-4xl font-bold capitalize bg-primary
-             rounded-xl text-white py-2 px-4 w-fit md:w-96"></h1>
-            <div class="flex space-x-2 *:bg-primary *:rounded *:px-5 *:py-1 text-white">
-                <p class="des-loc"></p>
-                <p class="des-attr"></p>
+            class="des-head justify-center items-center lg:items-center flex flex-col space-y-3 lg:space-y-0 lg:p-2 w-full">
+            <div class="lg:p-5">
+                <img class="w-72 h-96 lg:w-fit lg:h-[30rem] rounded object-cover des-banner" src=""
+                    alt="City image" />
+            </div>
+            <div
+                class="space-y-2 px-2 lg:p-4 lg:ml-2 mt-auto flex flex-col justify-center items-center lg:items-start lg:justify-normal lg:flex-none">
+                <h1 class="text-4xl font-bold capitalize bg-primary
+             rounded-xl text-white py-2 px-4 w-fit lg:w-96"></h1>
+                <div class="flex space-x-2 *:bg-primary *:rounded *:px-5 *:py-1 text-white">
+                    <p class="des-loc"></p>
+                    <p class="des-attr"></p>
+                </div>
             </div>
         </div>
-    </div>
-    <p class="des-description md:p-5 text-xl"></p>
-    <div class="bg-primary text-white rounded-xl p-2 mx-5">
-        <h2 class="text-3xl text-white p-4">Check out, <span class="city-wonder"></span> Wonder's</h2>
-        <div class="des-wonder grid grid-cols-1 mx-2 md:grid-cols-3">
+        <div class="pr-2">
+            <img class="des-large w-[90rem] object-cover rounded-xl hidden lg:inline" src="" alt="">
         </div>
-    </div>
-    <div class="bg-primary p-10 grid grid-cols-1 mx-5 rounded-xl my-2 md:grid-cols-3
-     *:border-1 *:border-white *:rounded-xl *:bg-primary/50 *:p-2 text-white gap-2 *:w-80 *:h-40 *:space-y-4">
-        <div class="">
-            <h4>Top Sightseeing</h4>
-            <p class = "topSights"></p>
-        </div>
-        <div class="">
-            <h4>Top Season to visit</h4>
-            <p class = "topSeason"></p>
-        </div>
-        <div class="">
-            <h4>Top Transportation</h4>
-            <p class = "topTrapsport"></p>
-        </div>
-        <div class="">
-            <h4>Top Free Sightseeing</h4>
-            <p class = "topFreeSights"></p>
-        </div>
-        <div class="">
-            <h4>Top neighborhood</h4>
-            <p class = "topHood"></p>
-        </div>
-        <div class="">
-            <h4>Top Equipment</h4>
-            <p class = "topEquipment"></p>
-        </div>
+    </section>
 
+    <p class="des-description px-4 py-2 lg:p-5 text-xl"></p>
+    <div class="bg-primary text-white rounded-xl p-2 mx-5 snap-center">
+        <h2 class="text-3xl text-white p-4">Check out, <span class="city-Name"></span> Wonder's</h2>
+        <div class="des-wonder grid grid-cols-1 mx-2 lg:grid-cols-3">
+        </div>
     </div>
+    <section class="bg-primary p-5 mx-5 rounded-xl my-2 snap-center">
+
+        <div class="p-5 text-center text-white">
+            <h2 class="text-3xl p-2 text-center"><span class="city-Name"></span> Top Stuff</h2>
+            <p>Things to consider</p>
+        </div>
+        <div class=" grid grid-cols-1 lg:grid-cols-3 p-10
+     *:border-0.5 *:border-white *:rounded-xl *:bg-primary/50 text-center *:shadow-sm *:p-5 text-white gap-10 *:h-52 *:space-y-4">
+            <div class="">
+                <h4>Top Sightseeing</h4>
+                <p class="topSights"></p>
+            </div>
+            <div class="">
+                <h4>Top Season to visit</h4>
+                <p class="topSeason"></p>
+            </div>
+            <div class="">
+                <h4>Top Transportation</h4>
+                <p class="topTransport"></p>
+            </div>
+            <div class="">
+                <h4>Top Free Sightseeing</h4>
+                <p class="topFreeSights"></p>
+            </div>
+            <div class="">
+                <h4>Top neighborhood</h4>
+                <p class="topHood"></p>
+            </div>
+            <div class="">
+                <h4>Top Equipment</h4>
+                <p class="topEquipment"></p>
+            </div>
+
+        </div>
+    </section>
+
 </section>
 
 <script src="/routerHandle.js"></script>
