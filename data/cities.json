@@ -1,0 +1,42 @@
+{
+    "data": [
+        {
+            "cityName": "city-1",
+            "cityBannerImg": "https://placehold.co/400",
+            "cityLoc": "North",
+            "cityAttribute": "Costal",
+            "cityDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab delectus voluptatibus magni dignissimos, quos at illum aliquam optio dicta magnam velit harum, praesentium ullam aspernatur earum qui, ad deleniti!",
+            "cityWonders": [
+                {
+                    "wonderName": "Wonder Title",
+                    "wonderImg": "https://placehold.co/200",
+                    "wonderDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab delectus voluptatibus magni dignissimos, quos at illum aliquam optio dicta magnam velit harum, praesentium ullam aspernatur earum qui, ad deleniti!"
+                },
+                {
+                    "wonderName": "Wonder Title2",
+                    "wonderImg": "https://placehold.co/200",
+                    "wonderDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab delectus voluptatibus magni dignissimos, quos at illum aliquam optio dicta magnam velit harum, praesentium ullam aspernatur earum qui, ad deleniti!"
+                },
+                {
+                    "wonderName": "Wonder Title3",
+                    "wonderImg": "https://placehold.co/200",
+                    "wonderDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab delectus voluptatibus magni dignissimos, quos at illum aliquam optio dicta magnam velit harum, praesentium ullam aspernatur earum qui, ad deleniti!"
+                }
+            ]
+        },
+        {
+            "cityName": "city-2",
+            "cityBannerImg": "https://placehold.co/400",
+            "cityLoc": "North",
+            "cityAttribute": "Capital",
+            "cityDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab delectus voluptatibus magni dignissimos, quos at illum aliquam optio dicta magnam velit harum, praesentium ullam aspernatur earum qui, ad deleniti!",
+            "cityWonders": [
+                {
+                    "wonderName": "W1",
+                    "wonderImg": "https://placehold.co/400",
+                    "wonderDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ab delectus voluptatibus magni dignissimos, quos at illum aliquam optio dicta magnam velit harum, praesentium ullam aspernatur earum qui, ad deleniti!"
+                }
+            ]
+        }
+    ]
+}
