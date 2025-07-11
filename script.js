@@ -14,6 +14,7 @@ function switchPage(page) {
         history.pushState(null, '', `/pages/${page}.html`);
         $("title").text(titleCase(page));
         localStorage.setItem("lastPage", page);
+         $(".link-btn").click((e) => switchPageClickEffect(e.target.getAttribute("routes")))
         return;
     }
     try {
