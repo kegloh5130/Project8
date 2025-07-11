@@ -7,39 +7,68 @@
 <body class="snap-y">
 
 
-<section class="flex-col  justify-between my-0  mx-auto items-center bg-[#0e2525]/80 p-96 relative snap-center" >
-    <h1 class="text-6xl mx-auto text-center text-white font-extrabold  ">Dack Gabay</h1>
-    <h2 class="text-4xl  text-center font-extralight">Your Guide To The Philipines</h2>
+<section class="flex-col  justify-between my-0  mx-auto items-center bg-[#0e2525]/80 xl:p-96 p-20 relative snap-center" >
+    <h1 class="xl:text-6xl text-3xl mx-auto text-center text-white font-extrabold ">Dack Gabay</h1>
+    <h2 class="xl:text-4xl text-2xl  text-center font-extralight text-accent">Your Guide To The Philippines</h2>
     <section>
-    <img class=" flex-row  w-[70rem] left-50 -top-20 items-center mr-1 absolute -z-1" src="/img/v4.png" alt="">
+    <img class=" flex-row  xl:w-[70rem] xl:left-50 xl:-top-20  w-[20rem] -top-10 left-10 items-center mr-1 absolute -z-1" src="/img/v4.png" alt="">
     </section>
 </section>
+<!-- End of First Section -->
 
 
-<section class="flex justify-center items-center  p-113  relative  bg-black/40 snap-center">
-    <p class="text-white text-4xl font-extrabold">Choose Your next location to travel</p>
-    <video autoplay loop muted class="absolute -z-10">
+<section class="flex justify-center items-center  xl:p-113 p-20 overflow-hidden relative  bg-black/40 snap-center">
+    <p class="text-accent xl:text-4xl text-[11px]   font-extrabold">Choose Your next location to travel</p>
+    <video autoplay loop muted class="absolute -z-10 ">
         <source  src="/img/introvid2.mp4" type="video/mp4">
     </video>
 </section>
 
+<!-- End of Second section -->
+
 <section class="flex items-center bg-[#0e2525]/80 ">
-    <img  class="w-[40rem] object-cover -z-1 "   src="/img/p2.jpg" alt="">
+    <img  class="xl:w-[40rem] hidden xl:inline object-cover -z-1 "   src="/img/p2.jpg" alt="">
 
     <section class="flex flex-col mx-auto items-center ">
-    <p class="text-center  text-4xl w-70  mx-auto text-[#0e2525] font-bold">At <span class="text-6xl text-white">Dack Gabay</span>, Your travel plans is our mission! 
+    <p class="text-center  xl:text-4xl text-2xl  w-70  mx-auto text-accent font-bold mt-9">At <span class="xl:text-6xl text-4xl text-white">Dack Gabay</span> Your travel plans is our mission! 
         We offer <span class="text-white">guides to various locations</span> in the Philippines. 
         Checkout our <span class="text-white">Travel Packages</span> and schedule your<span class="text-white"> next Vacation</span></p>
         <button class="link-btn px-10 py-5 items-center bg-[#0e2525] rounded-lg mt-20 text-white font-bold hover:scale-125 transition-all ease-in delay-100" routes="package">Packages</button>
     </section>    
 </section>
+<!-- End of Third section -->
 
-<section class="bg-[#0e2525]/80 p-60 pt-10">
-    <h1 class="flex items-center justify-center text-white font-extrabold text-4xl"> Our Locations</h1>
-    <section>
-        <!-- The locations will go here! -->
+
+
+<section class="flex flex-col  bg-[#0e2525]/80 xl:p-30 pt-10 relative">
+    <h1 class="flex items-center justify-center text-white font-extrabold xl:text-4xl text-2xl xl:mt-0 mt-15">Popular Sites </h1>
+    <img class=" flex-row  xl:w-[70rem] w-[40rem] xl:left-70  items-center mr-1 absolute -z-1 top-10" src="/img/v6.png" alt="">
+
+<section class="flex xl:flex-row flex-col xl:justify-evenly gap-10 items-center xl:-mx-20 xl:my-28 my-10 ">
+   
+    <section class="flex flex-col xl:p-20 p-10 bg-[#0e2525]/60 rounded-3xl">
+        <img class="w-[250px]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Ph_seal_ncr_manila.svg/1920px-Ph_seal_ncr_manila.svg.png" alt="">
+        <button class="link-btn px-10 py-5 items-center bg-[#0e2525] rounded-lg mt-20 text-white font-bold hover:scale-125 transition-all ease-in delay-100" routes="des-Manila">Manila</button>
     </section>
 
+    <section class="flex flex-col xl:p-20  p-10 bg-[#0e2525]/60 rounded-3xl">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Bohol_Seal_1.svg/250px-Bohol_Seal_1.svg.png" alt="">
+        <button class="link-btn px-10 py-5 items-center bg-[#0e2525] rounded-lg mt-20 text-white font-bold hover:scale-125 transition-all ease-in delay-100" routes="des-Bohol">Bohol</button>
+    </section>
+
+    <section class="flex flex-col xl:p-20 p-10 bg-[#0e2525]/60 rounded-3xl">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Camiguin_Seal.svg/250px-Camiguin_Seal.svg.png" alt="">
+        <button class="link-btn px-10 py-5 items-center bg-[#0e2525] rounded-lg mt-20 text-white font-bold hover:scale-125 transition-all ease-in delay-100" routes="des-Camiguin">Camiguin</button>
+    </section>
+</section>
+ 
+<section class="-mt-20 xl:mt-0">
+    <p class="xl:text-xl text-xs font-bold text-[#0e2525] text-center "> Having<span class="text-2xl text-white"> Difficulty choosing?</span>
+         <button class="link-btn xl:px-5 xl:py-5 px-2 py-2
+         items-center bg-[#0e2525] rounded-lg mt-20 text-white 
+         font-bold hover:scale-110 transition-all ease-in delay-100" routes="Contact">Contact</button>
+          us to learn more about our <span class="text-2xl text-white">various guides</span> to different locations in the <span class="text-white">Philippines</span></p>
+</section>
 
 </section>
 
