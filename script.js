@@ -14,9 +14,10 @@ function switchPage(page) {
         history.pushState(null, '', `/pages/${page}.html`);
         $("title").text(titleCase(page));
         localStorage.setItem("lastPage", page);
-         $(".link-btn").click((e) => switchPageClickEffect(e.target.getAttribute("routes")))
+        $(".link-btn").click((e) => switchPageClickEffect(e.target.getAttribute("routes")))
         return;
     }
+    console.log()
     try {
         $.ajax({
             url: `/pages/${isPageDes ? "destinations" : page}.html`,
@@ -73,8 +74,9 @@ let cities = [];
 function desCityBuilder(item) {
     const itemD = cities.find((val) => val.cityName.includes(item)),
         crumbs = $("<h5/>").text(itemD.cityName).addClass("text-accent underline bold");
-    $(".des-banner").attr("src", itemD.cityBannerImg);
-    $(".des-head h1").text(itemD.cityName);
+    let index = cities.indexOf(itemD);
+    //$(".des-banner").attr("src", itemD.cityBannerImg);
+    $(".des-head").text(itemD.cityName);
     $(".des-description").text(itemD.cityDescription)
     $(".des-loc").text(itemD.cityLoc)
     $(".des-attr").text(itemD.cityAttribute)
@@ -84,11 +86,11 @@ function desCityBuilder(item) {
     // Builds Wonders
     const wonders = itemD.cityWonders;
     const wondersEle = wonders.map((item) => {
-        let container = $("<div>").addClass("rounded-xl p-2 text-white flex flex-col items-center space-y-2 size-full mx-auto bg-primary/50 lg:mx-0"),
+        let container = $("<div>").addClass("rounded-xl p-3 text-white flex flex-col items-center space-y-2 size-full mx-auto shadow-sm bg-primary/50 xl:px-2 xl:py-5 xl:mx-0"),
             textContainer = $("<div>").addClass("p-2 flex flex-col space-y-2"),
-            name = $("<h4/>").addClass("lg:text-2xl").text(item.wonderName),
-            img = $("<img/>").addClass("rounded-xl object-cover size-[20rem] lg:size-[35rem] shadow-sm").attr("src", item.wonderImg),
-            description = $("<p>").addClass("text-sm lg:text-lg lg:w-[25rem] lg:h-[10rem]").text(item.wonderDescription);
+            name = $("<h4/>").addClass("text-lx font-bold xl:text-2xl").text(item.wonderName),
+            img = $("<img/>").addClass("rounded-xl object-cover size-full aspect-square shadow-sm").attr("src", item.wonderImg),
+            description = $("<p>").addClass("text-sm xl:text-lg xl:w-[20rem] xl:h-[10rem]").text(item.wonderDescription);
         textContainer.append(name, description)
         container.append(img, textContainer);
         return container
@@ -98,19 +100,41 @@ function desCityBuilder(item) {
     }
     // Builds tops stuff based on cityTop Keys
     Object.keys(itemD.cityTop).forEach((item, index) => {
-        $("." + item).text(Object.values(itemD.cityTop)[index]).addClass("p-5")
+        $("." + item).text(Object.values(itemD.cityTop)[index]).addClass(" p-2 xl:p-3")
     })
+    // For random Items
+    // const numbers = new Set(); // Use a Set to ensure unique numbers
+
+    // while (numbers.size < 3) {
+    //     const randomNumber = Math.floor(Math.random() * cities.length) + 1; // Generate random number between 1 and x
+
+    //     numbers.add(randomNumber); // Add to Set if it's not the excluded number
+
+    // }
+    index = (index + 3) >= cities.length ? 0 : index
+    desCardBuilder(cities.slice((index) + 1, index + 1 + 3))
 }
 /**
  * Creates the destinations buttons 
  */
 function desLinkBuilder(data, place) {
-    data.forEach((item,index) => {
-        let container = $("<div/>").addClass(`flex items-center space-x-2 space-y-1 p-2 ${index+1 === data.length? "hover:rounded-b-xl" : "hover:rounded-none"}`),
+    data.forEach((item, index) => {
+        let container = $("<div/>").addClass(`flex items-center space-x-2 space-y-1 p-2 ${index + 1 === data.length ? "hover:rounded-b-xl" : "hover:rounded-none"}`),
             img = $("<img/>").attr("src", item.cityBannerImg).addClass("rounded size-10 "),
             btn = $("<h5/>").text(item.cityName).addClass("inline hover:cursor-pointer capitalize link-btn ").attr("routes", "des-" + item.cityName);
         container.append(img, btn);
         $(place).append(container);
+    })
+}
+function desCardBuilder(dataArr) {
+    dataArr.forEach((item) => {
+        let container = $("<div/>")
+            .attr("routes", "des-" + item.cityName).on("click",(e) => switchPageClickEffect(e.target.getAttribute("routes")))
+            .addClass("flex flex-col items-center space-y-4 rounded hover:cursor-pointer shadow-sm bg-secondary/50 xl:px-2 xl:py-5 ease-in-out hover:scale-90 transition-all"),
+            seal = $("<img/>").attr("src", item.cityBannerImg).addClass("size-20").attr("routes", "des-" + item.cityName),
+            cityName = $("<h3/>").text(item.cityName).addClass("capitalize text-white text-2xl").attr("routes", "des-" + item.cityName);
+        container.append(seal, cityName)
+        $(".des-other").append(container);
     })
 }
 /**
@@ -135,7 +159,11 @@ function setUpCities(callback) {
 function switchPageClickEffect(ele) {
     let route = String(ele);
     switchPage(route);
-    $(".des-cont").slideUp("slow");
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+    $(".des-cont").slideUp("linear");
 }
 /**
  * This will excute when the document is fulley loaded
@@ -153,6 +181,6 @@ $(document).ready(() => {
     }
     $(".des-cont").hide();
     $("#des-btn").click(() => {
-        $(".des-cont").slideToggle("slow");
+        $(".des-cont").slideToggle("linear");
     })
 })

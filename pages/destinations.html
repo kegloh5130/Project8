@@ -1,44 +1,36 @@
-<section class="snap-y overflow-y-auto">
-    <div class="des-crumbs flex items-center space-x-2 *:inline *:text-xs lg:*:text-lg capitalize text-left w-fit lg:p-5">
-        <h5 class="bg-primary text-white rounded-xl px-0.5 lg:px-2">Destination</h5>
-        >
-    </div>
-    <section class="lg:flex lg:justify-center lg:items-center lg:px-2 snap-center">
-        <div
-            class="des-head justify-center items-center lg:items-center flex flex-col space-y-3 lg:space-y-0 lg:p-2 w-full">
-            <div class="lg:p-5">
-                <img class="w-fit h-72 lg:w-fit lg:h-[30rem] rounded object-cover des-banner" src="" alt="City image" />
-            </div>
-            <div
-                class="space-y-2 px-2 lg:p-4 lg:ml-2 mt-auto flex flex-col justify-center items-center lg:items-start">
-                <h1 class="text-4xl font-bold capitalize bg-primary
-             rounded-xl text-white py-2 px-4 w-fit lg:w-96"></h1>
-                <div class="flex mx-auto space-x-2 *:bg-primary *:rounded *:px-5 *:py-1 text-white">
-                    <p class="des-loc"></p>
-                    <p class="des-attr"></p>
-                </div>
-            </div>
+<section class="snap-y overflow-y-auto *:shrink-0 snap-mandatory [&_h2]:font-black">
+    <section class="snap-start flex items-center flex-col relative des-head-large">
+        <div class="w-full">
+            <img class="des-large object-cover w-full xl:h-[50rem] xl:inline" src="" alt="">
         </div>
-        <div class="pr-2">
-            <img class="des-large w-[120rem] object-cover rounded-xl hidden lg:inline" src="" alt="">
+        <div
+            class="p-5 xl:p-10 bg-[#0e2525] text-white size-fit justify-center items-center *:text-center space-y-2
+            xl:items-start absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/5 shadow-md rounded">
+            <h1 class="text-2xl xl:text-6xl font-black capitalize des-head"></h1>
+            <p class="des-attr font-light"></p>
         </div>
     </section>
 
-    <p class="des-description px-4 py-2 my-2 lg:p-10 lg:my-5 text-sm lg:text-2xl border-y-4 border-primary snap-center"></p>
+    <section
+        class="flex flex-col text-center bg-[#0e2525] text-white text-primary px-4 py-2 space-y-5 xl:p-20 snap-start">
+        <h2 class="xl:py-4 xl:text-3xl font-bold ">Overview</h2>
+        <p class="des-description text-lg p-5 xl:p-10 xl:text-2xl">
+        </p>
+    </section>
 
-    <div class="bg-accent text-white rounded-xl p-2 mx-5 snap-center shadow-sm">
-        <h2 class="text-3xl text-white p-4">Check out, <span class="city-Name"></span> Wonder's</h2>
-        <div class="des-wonder grid grid-cols-1 mx-2 gap-4 lg:grid-cols-3 justify-center">
+    <section class="bg-primary text-white px-4 py-2 space-y-5 xl:p-20 snap-start text-center">
+        <h2 class="xl:py-4 xl:text-3xl font-bold">Check out, <span class="city-Name"></span> Wonder's!</h2>
+        <div class="des-wonder grid grid-cols-1 mx-2 gap-4 md:grid-cols-3 justify-center p-2 xl:p-10">
         </div>
-    </div>
-    <section class="bg-secondary p-5 mx-5 rounded-xl my-2 snap-center shadow-sm">
+    </section>
+
+    <section class="bg-secondary px-4 py-2 space-y-5 xl:p-20 snap-start">
         <div class="p-5 text-center text-white">
             <h2 class="text-3xl p-2 text-center"><span class="city-Name"></span> Top Stuff</h2>
-            <p>Things to consider</p>
+            <h4>Things to consider</h4>
         </div>
-        <div
-            class=" grid grid-cols-1 lg:grid-cols-3 p-10
-     *:border-0.5 *:border-white *:rounded-xl *:bg-primary/50 text-center *:shadow-sm *:p-5 text-white gap-5 *:h-52 *:space-y-4">
+        <div class=" grid grid-cols-1 md:grid-cols-3 p-5 xl:p-10 [&_h4]:py-4 text-white [&_div]:hover:scale-90 [&_div]:transition-all [&_div]:ease-in-out
+                *:border-0.5 *:border-white *:rounded-xl *:bg-primary/50 text-center *:shadow-sm *:p-2  gap-5 *:h-52">
             <div class="">
                 <h4>Top Sightseeing</h4>
                 <p class="topSights"></p>
@@ -67,6 +59,13 @@
         </div>
     </section>
 
+    <section class="bg-secondary/80 px-4 py-2 space-y-5 xl:p-20 snap-start">
+        <h2 class="text-3xl p-2 text-center text-white">Checkout Others great Cities's</h2>
+        <!-- Generate 3 Random(not including the currect city) Cities in card format -->
+         <div class="des-other grid grid-cols-1 xl:grid-cols-3  gap-5">
+
+         </div>
+    </section>
 </section>
 
 <script src="/routerHandle.js"></script>
