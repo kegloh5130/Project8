@@ -4,3 +4,17 @@ body{
     margin: 0rem;
     font-family: "Montserrat", sans-serif;
 }
+
+@media screen and (min-width: 1300px) and (max-width:1440px){
+    #S2{
+        padding: 380px;
+    }
+    #S2P{
+        font-size: 30px;
+    }
+
+    #S4MI{
+        left: 200px;
+    }
+
+}
