@@ -4,7 +4,7 @@
  */
 function goToIndex() {
     if (document.querySelector("title") === null) {
-        window.location.href = "/";
+        window.location.href = "../index.html";
     }
 }
 window.onload = goToIndex()
