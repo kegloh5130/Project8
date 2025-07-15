@@ -89,7 +89,7 @@ function handleDestinationPage(page) {
     }
     desCityBuilder(cityName);
     if (isPopState) {
-        history.pushState({ page: 'destinations', id: cityName }, '', `/pages/destinations.html?city=${cityName}`);
+        history.pushState({ page: 'destinations', id: cityName }, '', `pages/destinations.html?city=${cityName}`);
     }
     isPopState = true;
     $("title").text(titleCase(cityName));
@@ -100,7 +100,7 @@ function handleDestinationPage(page) {
  */
 function handleRegularPage(page) {
     if (isPopState) {
-        history.pushState({"pages": page}, '', `/pages/${page}.html`);
+        history.pushState({"pages": page}, '', `pages/${page}.html`);
     }
     isPopState = true;
     $("title").text(titleCase(page));
