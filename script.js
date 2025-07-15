@@ -52,7 +52,7 @@ function renderCachedPage(page, isPageDes, existPage) {
 function fetchAndRenderPage(page, isPageDes) {
     try {
         $.ajax({
-            url: `/pages/${isPageDes ? "destinations" : page}.html`,
+            url: `pages/${isPageDes ? "destinations" : page}.html`,
             method: "GET",
             dataType: "html",
             success: (data) => {
