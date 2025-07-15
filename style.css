@@ -17,4 +17,6 @@ body{
         left: 200px;
     }
 
+.contact-form {
+  position: relative; /* Avoid absolute/fixed unless needed */
 }
