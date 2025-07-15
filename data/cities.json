@@ -626,6 +626,39 @@
                     "topHood": "Basco, Sabtang",
                     "topEquipment": "Camera, sun protection"
                 }
+            },
+            {
+                "cityName": "Quezon",
+                "cityBannerImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Quezon_City.svg/250px-Quezon_City.svg.png",
+                "cityLargeImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Heart_of_Quezon_City.jpg/500px-The_Heart_of_Quezon_City.jpg",
+                "cityLoc": "Calabarzon",
+                "cityAttribute": "Cultural & Natural",
+                "cityDescription": "Quezon Province is known for its rich cultural heritage, beautiful beaches, and natural attractions.",
+                "cityWonders": [
+                    {
+                        "wonderName": "Villa Escudero",
+                        "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/3/39/Villa_wiki.jpg",
+                        "wonderDescription": "A resort with a waterfall restaurant and cultural shows."
+                    },
+                    {
+                        "wonderName": "Cagbalete Island",
+                        "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Cagbalete_Island_2.jpg/2560px-Cagbalete_Island_2.jpg",
+                        "wonderDescription": "A beautiful island with white sand beaches and clear waters."
+                    },
+                    {
+                        "wonderName": "Mount Banahaw",
+                        "wonderImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/View_of_Mt._Banahaw_from_Sampalok_Lake%2C_San_Pablo_City%2C_Laguna.jpg/960px-View_of_Mt._Banahaw_from_Sampalok_Lake%2C_San_Pablo_City%2C_Laguna.jpg",
+                        "wonderDescription": "A dormant volcano known for its hiking trails and spiritual significance."
+                    }
+                ],
+                "cityTop": {
+                    "topSights": "Villa Escudero, Cagbalete Island, Mount Banahaw",
+                    "topSeason": "Dry season (December to May)",
+                    "topTransport": "Buses, jeepneys, tricycles", 
+                    "topFreeSights": "Beaches, waterfalls",
+                    "topHood": "Lucban, Tayabas",
+                    "topEquipment": "Swimwear, hiking shoes, camera"
+                }
             }
     ]
 }
