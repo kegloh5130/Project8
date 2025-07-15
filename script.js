@@ -192,7 +192,7 @@
     /**
      * This fetches cities.json and performace a optional
      * callback inside of the fetch
-     * @param {Function} callback 
+     * @param {Function} callback
      */
     function setUpCities(callback) {
         $.getJSON("data/cities.json", (data) => {
@@ -253,3 +253,21 @@
         }
     });
 })();
+
+    $(".des-cont").hide();
+    $("#des-btn").click(() => {
+        $(".des-cont").slideToggle("linear");
+    })
+    
+$(window).on("popstate", function (event) {
+    let params = new URLSearchParams(window.location.search);
+    let cityName = params.get("city");
+    let path = window.location.pathname;
+    let page = path.split("/").pop().replace(".html", "");
+    isPopState = false;
+    if (page === "destinations" && cityName) {
+        switchPage("des-" + cityName);
+    } else {
+        switchPage(page);
+    }
+});
