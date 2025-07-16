@@ -304,3 +304,10 @@
         }
     });
 })();
+window.addEventListener('scroll', function() {
+    const img = document.querySelector('.parallax-img');
+    if (img) {
+        let scrolled = window.scrollY;
+        img.style.transform = 'translateY(' + (scrolled * 0.3) + 'px)';
+    }
+});
