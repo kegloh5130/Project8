@@ -1,3 +1,131 @@
 {
-    "data" : []
+    "data": [
+        {
+            "packageName": "Manila Experience",
+            "image": "/img/Man.jpg",
+            "description": "Explore the vibrant heart of the Philippines with our Manila Urban Adventure travel package! This 4-day, 3-night getaway offers the perfect blend of history, culture, and fun — ideal for first-time visitors or seasoned travelers looking to rediscover the city.",
+            "includes": {
+                "nights": "3 nights at a 4-star hotel in Makati or Bonifacio Global City (daily breakfast included)",
+                "excursions": [
+                    "Intramuros Heritage Tour (Walk through Manila's colonial past)",
+                    "Manila Bay Sunset Cruise (With refreshments and live local music)"
+                ],
+                "feature": "Free time for shopping, nightlife, or optional add-on tours"
+            },
+            "price": "Starting at $495"
+        },
+        {
+            "packageName": "Cebu Experience",
+            "image": "/img/Cebu.jpg",
+            "description": "Uncover the perfect mix of island life and cultural charm with our Cebu Island & Heritage Getaway! This 4-day, 3-night package offers stunning beaches, rich history, and unforgettable island experiences.",
+            "includes": {
+                "nights": "3 nights at a beachfront resort or central hotel in Cebu City (daily breakfast included)",
+                "excursions": [
+                    "Cebu City Heritage Tour – Visit Magellan’s Cross, Fort San Pedro, and the Taoist Temple",
+                    "Oslob Whale Shark Watching & Tumalog Falls Day Trip – Swim with gentle giants and chase waterfalls."
+                ],
+                "feature": "Welcome dinner featuring Cebu’s famous lechon and seafood"
+            },
+            "price": "Starting at $545"
+        },
+        {
+            "packageName": "Davao Experience",
+            "image": "/img/Davavo.jpg",
+            "description": "Immerse yourself in the natural beauty and rich culture of southern Philippines with our Davao Nature & Culture Escape! This 4-day, 3-night adventure is perfect for nature lovers, foodies, and those looking to explore a more relaxed side of the country.",
+            "includes": {
+                "nights": "3 nights at a 4-star eco-resort or city hotel (daily breakfast included)",
+                "excursions": [
+                    "Mount Apo Highlands Tour – Scenic drive, cultural stops, and local delicacies",
+                    "Island Hopping in Samal – Crystal-clear waters, snorkeling, and beach lunch"
+                ],
+                "feature": "Complimentary local souvenir pack"
+            },
+            "price": "Starting at $525"
+        },
+        {
+            "packageName": "Vigan Experience",
+            "image": "/img/Vigan.jpg",
+            "description": "A 3-day, 2-night journey through one of Asia’s best-preserved Spanish colonial towns. Perfect for culture lovers and weekend travelers.",
+            "includes": {
+                "nights": "2 nights at a charming heritage hotel along Calle Crisologo (daily breakfast included)",
+                "excursions": [
+                    "Ride a kalesa through cobblestone streets",
+                    "Visit the Syquia Mansion, Bantay Bell Tower, and local pottery workshops"
+                ],
+                "feature": "Dinner at a traditional Ilocano restaurant featuring bagnet and empanada"
+            },
+            "price": "Starting at $385"
+        },
+        {
+            "packageName": "Baguio Experience",
+            "image": "/img/Baguio.png",
+            "description": "Escape the heat and unwind in the cool highlands with our Baguio Mountain Chill Retreat! This 4-day, 3-night getaway brings together art, nature, and local flavor in the country’s Summer Capital.",
+            "includes": {
+                "nights": "3 nights at a hillside boutique hotel or cozy cabin (daily breakfast included)",
+                "excursions": [
+                    "Baguio Creative Tour – BenCab Museum, Ili-Likha Artist Village, and weaving demos",
+                    "Nature Day – Botanical Garden, Mines View, Burnham Park with picnic lunch"
+                ],
+                "feature": "Strawberry picking (seasonal) or visit to a local farm"
+            },
+            "price": "Starting at $495"
+        },
+        {
+            "packageName": "Ilocos Norte Experience",
+            "image": "/img/IIocos.jpg",
+            "description": "From ancient churches to epic sand dunes, our Ilocos Norte Coastal & Cultural Getaway offers adventure, history, and stunning natural beauty in one unforgettable trip.",
+            "includes": {
+                "nights": "3 nights at a coastal resort in Pagudpud or heritage inn in Laoag (daily breakfast included)",
+                "excursions": [
+                    "Ilocos Cultural Tour – Paoay Church, Malacañang of the North, Marcos Museum",
+                    "Pagudpud Adventure Day – Bangui Windmills, Kapurpurawan Rock Formation, Saud Beach"
+                ],
+                "feature": "Optional add-on: 4x4 sand dune ride in Paoay"
+            },
+            "price": "Starting at $515"
+        },
+        {
+            "packageName": "Bohol Nature Discovery",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Chocolate_Hills_Bohol_Philippines.jpg/500px-Chocolate_Hills_Bohol_Philippines.jpg",
+            "description": "Experience the Chocolate Hills, tarsiers, and white sand beaches of Bohol in this 4-day, 3-night adventure.",
+            "includes": {
+                "nights": "3 nights at a Panglao Island resort (daily breakfast included)",
+                "excursions": [
+                    "Chocolate Hills & Tarsier Sanctuary tour",
+                    "Loboc River cruise with lunch",
+                    "Beach day at Alona Beach"
+                ],
+                "feature": "Scenic countryside and wildlife encounters"
+            },
+            "price": "Starting at $575"
+        },
+        {
+            "packageName": "Iloilo Heritage & Food Tour",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Mandurriao_Iloilo_City_skyline_2025.jpg/960px-Mandurriao_Iloilo_City_skyline_2025.jpg",
+            "description": "Discover the charm of Iloilo with its Spanish-era churches, heritage mansions, and vibrant food scene in this 3-day, 2-night cultural getaway.",
+            "includes": {
+                "nights": "2 nights at a boutique hotel in Iloilo City (daily breakfast included)",
+                "excursions": [
+                    "Guided tour of Molo Church, Jaro Cathedral, and Calle Real",
+                    "Food trip featuring La Paz Batchoy and Pancit Molo"
+                ],
+                "feature": "Free time to stroll the Iloilo River Esplanade"
+            },
+            "price": "Starting at $395"
+        },
+        {
+            "packageName": "Zamboanga Culture & Beach Adventure",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Zamboanga_City_Hall%2C_Rizal_Park_%28NS_Valderosa%2C_Zamboanga_City%3B_10-06-2023%29.jpg/960px-Zamboanga_City_Hall%2C_Rizal_Park_%28NS_Valderosa%2C_Zamboanga_City%3B_10-06-2023%29.jpg",
+            "description": "Experience Asia's Latin City with a mix of heritage, colorful vintas, and the famous pink sand beach in this 4-day, 3-night adventure.",
+            "includes": {
+                "nights": "3 nights at a city hotel (daily breakfast included)",
+                "excursions": [
+                    "City tour: Fort Pilar, Paseo del Mar, and Yakan Weaving Village",
+                    "Day trip to Sta. Cruz Island Pink Sand Beach"
+                ],
+                "feature": "Welcome dinner with local Chavacano cuisine"
+            },
+            "price": "Starting at $495"
+        }
+    ]
 }
