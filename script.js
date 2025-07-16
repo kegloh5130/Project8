@@ -174,6 +174,13 @@
             $(place).append(container);
         })
     }
+    function desFooterBuilder() {
+        const fooLinks = $("#foo-des-links");
+        cities.forEach((item) => {
+            let link = $("<h6/>").text(item.cityName).addClass("text-white  hover:cursor-pointer hover:text-accent capitalize text-sm xl:text-lg font-light link-btn");
+            fooLinks.append(link);
+        });
+    }
     /**
      * This builds the destination cards for the other cities
      * @param {Array} dataArr 
@@ -198,6 +205,7 @@
         $.getJSON("data/cities.json", (data) => {
             cities = data.data;
             desLinkBuilder(cities, ".des-cont");
+            desLinkBuilder(cities, "#foo-des-links");
             if (callback) {
                 callback();
             }
