@@ -143,11 +143,11 @@
         // Builds Wonders
         const wonders = itemD.cityWonders;
         const wondersEle = wonders.map((item) => {
-            let container = $("<div>").addClass("rounded-xl p-3 text-white flex flex-col items-center space-y-2 size-full mx-auto shadow-sm bg-primary/50 xl:px-2 xl:py-5 xl:mx-0"),
+            let container = $("<div>").addClass("rounded-xl p-3 text-white flex flex-col items-center space-y-2 size-full mx-auto shadow-sm bg-primary/50 xl:px-2 xl:py-2 xl:mx-0"),
                 textContainer = $("<div>").addClass("p-2 flex flex-col space-y-2"),
                 name = $("<h4/>").addClass("text-lx font-bold xl:text-2xl").text(item.wonderName),
                 img = $("<img/>").addClass("rounded-xl object-cover size-full xl:w-[30rem] xl:h-[20rem] aspect-square shadow-sm ").attr("src", item.wonderImg),
-                description = $("<p>").addClass("text-sm xl:text-lg xl:w-[20rem]").text(item.wonderDescription);
+                description = $("<p>").addClass("text-sm xl:text-lg xl:w-[20rem] font-light").text(item.wonderDescription);
             textContainer.append(name, description)
             container.append(img, textContainer);
             return container
@@ -192,7 +192,7 @@
     /**
      * This fetches cities.json and performace a optional
      * callback inside of the fetch
-     * @param {Function} callback
+     * @param {Function} callback 
      */
     function setUpCities(callback) {
         $.getJSON("data/cities.json", (data) => {
@@ -253,21 +253,3 @@
         }
     });
 })();
-
-    $(".des-cont").hide();
-    $("#des-btn").click(() => {
-        $(".des-cont").slideToggle("linear");
-    })
-    
-$(window).on("popstate", function (event) {
-    let params = new URLSearchParams(window.location.search);
-    let cityName = params.get("city");
-    let path = window.location.pathname;
-    let page = path.split("/").pop().replace(".html", "");
-    isPopState = false;
-    if (page === "destinations" && cityName) {
-        switchPage("des-" + cityName);
-    } else {
-        switchPage(page);
-    }
-});
