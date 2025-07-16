@@ -1,7 +1,8 @@
 {
     "data": [
         {
-            "packageName": "Manila Experience",
+            "packageName": "Manila",
+            "packageAttr": "Urban Adventure",
             "image": "/img/Man.jpg",
             "description": "Explore the vibrant heart of the Philippines with our Manila Urban Adventure travel package! This 4-day, 3-night getaway offers the perfect blend of history, culture, and fun — ideal for first-time visitors or seasoned travelers looking to rediscover the city.",
             "includes": {
@@ -12,10 +13,11 @@
                 ],
                 "feature": "Free time for shopping, nightlife, or optional add-on tours"
             },
-            "price": "Starting at $495"
+            "price": "$495"
         },
         {
-            "packageName": "Cebu Experience",
+            "packageName": "Cebu",
+            "packageAttr": "Island & Heritage",
             "image": "/img/Cebu.jpg",
             "description": "Uncover the perfect mix of island life and cultural charm with our Cebu Island & Heritage Getaway! This 4-day, 3-night package offers stunning beaches, rich history, and unforgettable island experiences.",
             "includes": {
@@ -26,10 +28,11 @@
                 ],
                 "feature": "Welcome dinner featuring Cebu’s famous lechon and seafood"
             },
-            "price": "Starting at $545"
+            "price": "$545"
         },
         {
-            "packageName": "Davao Experience",
+            "packageName": "Davao",
+            "packageAttr": "Nature & Culture",
             "image": "/img/Davavo.jpg",
             "description": "Immerse yourself in the natural beauty and rich culture of southern Philippines with our Davao Nature & Culture Escape! This 4-day, 3-night adventure is perfect for nature lovers, foodies, and those looking to explore a more relaxed side of the country.",
             "includes": {
@@ -40,10 +43,11 @@
                 ],
                 "feature": "Complimentary local souvenir pack"
             },
-            "price": "Starting at $525"
+            "price": "$525"
         },
         {
-            "packageName": "Vigan Experience",
+            "packageName": "Vigan",
+            "packageAttr": "Cultural Heritage",
             "image": "/img/Vigan.jpg",
             "description": "A 3-day, 2-night journey through one of Asia’s best-preserved Spanish colonial towns. Perfect for culture lovers and weekend travelers.",
             "includes": {
@@ -57,7 +61,8 @@
             "price": "Starting at $385"
         },
         {
-            "packageName": "Baguio Experience",
+            "packageName": "Baguio",
+            "packageAttr": "Mountain Retreat",
             "image": "/img/Baguio.png",
             "description": "Escape the heat and unwind in the cool highlands with our Baguio Mountain Chill Retreat! This 4-day, 3-night getaway brings together art, nature, and local flavor in the country’s Summer Capital.",
             "includes": {
@@ -68,10 +73,11 @@
                 ],
                 "feature": "Strawberry picking (seasonal) or visit to a local farm"
             },
-            "price": "Starting at $495"
+            "price": "$495"
         },
         {
-            "packageName": "Ilocos Norte Experience",
+            "packageName": "Ilocos Norte",
+            "packageAttr": "Coastal & Adventure",
             "image": "/img/IIocos.jpg",
             "description": "From ancient churches to epic sand dunes, our Ilocos Norte Coastal & Cultural Getaway offers adventure, history, and stunning natural beauty in one unforgettable trip.",
             "includes": {
@@ -82,10 +88,11 @@
                 ],
                 "feature": "Optional add-on: 4x4 sand dune ride in Paoay"
             },
-            "price": "Starting at $515"
+            "price": "$515"
         },
         {
-            "packageName": "Bohol Nature Discovery",
+            "packageName": "Bohol",
+            "packageAttr": "Nature Discovery",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Chocolate_Hills_Bohol_Philippines.jpg/500px-Chocolate_Hills_Bohol_Philippines.jpg",
             "description": "Experience the Chocolate Hills, tarsiers, and white sand beaches of Bohol in this 4-day, 3-night adventure.",
             "includes": {
@@ -97,10 +104,11 @@
                 ],
                 "feature": "Scenic countryside and wildlife encounters"
             },
-            "price": "Starting at $575"
+            "price": "$575"
         },
         {
-            "packageName": "Iloilo Heritage & Food Tour",
+            "packageName": "Iloilo",
+            "packageAttr": "Culinary & Heritage",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Mandurriao_Iloilo_City_skyline_2025.jpg/960px-Mandurriao_Iloilo_City_skyline_2025.jpg",
             "description": "Discover the charm of Iloilo with its Spanish-era churches, heritage mansions, and vibrant food scene in this 3-day, 2-night cultural getaway.",
             "includes": {
@@ -111,10 +119,11 @@
                 ],
                 "feature": "Free time to stroll the Iloilo River Esplanade"
             },
-            "price": "Starting at $395"
+            "price": "$395"
         },
         {
-            "packageName": "Zamboanga Culture & Beach Adventure",
+            "packageName": "Zamboanga",
+            "packageAttr": "Culture & Beach",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Zamboanga_City_Hall%2C_Rizal_Park_%28NS_Valderosa%2C_Zamboanga_City%3B_10-06-2023%29.jpg/960px-Zamboanga_City_Hall%2C_Rizal_Park_%28NS_Valderosa%2C_Zamboanga_City%3B_10-06-2023%29.jpg",
             "description": "Experience Asia's Latin City with a mix of heritage, colorful vintas, and the famous pink sand beach in this 4-day, 3-night adventure.",
             "includes": {
@@ -125,7 +134,7 @@
                 ],
                 "feature": "Welcome dinner with local Chavacano cuisine"
             },
-            "price": "Starting at $495"
+            "price": "$495"
         }
     ]
 }

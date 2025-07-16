@@ -1,6 +1,6 @@
 (function () {
     const pagesData = [];
-    let cities = [], isPopState = false;
+    let cities = [], isPopState = false, packages = [];
 
     /**
      * This function switches the page based on the provided page name.
@@ -210,16 +210,20 @@
         });
     }
     function setUpPackages() {
+        if( packages.length > 0) {
+            packageBuilder(packages);
+            return;
+        }
         $.getJSON("../data/packages.json", (data) => {
-            console.log(data.data);
+            packages = data.data;
             packageBuilder(data.data);
         });
     }
     function packageBuilder(packages) {
         packages.forEach((item) => {
-            let container = $("<div/>").addClass("bg-white rounded-lg shadow-sm border-gray-200 h-full flex flex-col space-between"),
-                img = $("<img/>").addClass("rounded-t-lg w-full object-cover size-[15rem]").attr("src", item.image),
-                textContainer = $("<div/>").addClass("p-5 w-full flex flex-col items-center space-between"),
+            let container = $("<div/>").addClass("bg-white rounded-xl p-3 shadow-sm border-gray-200 h-full flex flex-col justify-between items-center"),
+                img = $("<img/>").addClass("rounded-xl object-cover size-[25rem] aspect-square shadow-xs").attr("src", item.image),
+                textContainer = $("<div/>").addClass("p-2 w-full flex flex-col items-center space-between"),
                 inlcudesContainer = $("<div/>").addClass("flex flex-col space-y-2 mb-3"),
                 includesTitle = $("<h5/>").addClass("text-lg font-semibold text-gray-900").text("This Package Includes:"),
                 includesList = $("<ul/>").addClass("list-disc pl-6 space-y-2 mb-2 text-gray-600 mt-4 overflow-auto h-[10rem]"),
@@ -227,17 +231,25 @@
                 includesFeatures = $("<li/>").text(item.includes.feature),
                 includesExcursionsTitle = $("<li/>").addClass("text-lg font-semibold text-gray-900 mt-2").text("Excursions:"),
                 includesExcursionsContainer = $("<ol/>").addClass("list-decimal pl-6 mt-1 text-gray-500 space-y-1"),
-                title = $("<h5/>").addClass("mb-2 text-2xl font-bold text-left tracking-tight text-gray-900").text(item.packageName),
+                titleContainer = $("<div/>").addClass("flex flex-col space-y-2 justify-center items-center mb-3"),
+                title = $("<h5/>").addClass("mb-2 text-xl md:text-2xl xl:text-4xl font-bold text-left tracking-tight text-gray-900").text(item.packageName),
+                attrTitle = $("<h5/>").addClass("text-sm font-semibold text-gray-500").text(item.packageAttr),
+                btnContainer = $("<div/>").addClass("flex flex-col p-5 items-center md:flex-row md:space-y-0 md:space-x-2 space-y-2"),
                 description = $("<p/>").addClass("mb-3 font-normal text-gray-700").text(item.description),
-                price = $("<a/>").addClass("items-center p-5 text-sm font-medium text-white bg-primary rounded-lg hover:bg-accent").text("Price " + item.price);
+                price = $("<span/>").addClass("p-5 text-sm").text("Starting at "),
+                priceValue = $("<span/>").addClass("font-bold").text(item.price),
+                route = $("<button/>").addClass("p-5 text-sm font-medium text-white bg-primary rounded-lg hover:bg-accent hover:cursor-pointer link-btn")
+                        .attr("routes", "des-" + item.packageName).text("Explore " + item.packageName);
             item.includes.excursions.forEach((excursion) => {
                 let excursionItem = $("<li/>").text(excursion);
                 includesExcursionsContainer.append(excursionItem);
             });
+            price.append(priceValue);
+            titleContainer.append(title, attrTitle);
+            btnContainer.append(price, route);
             includesList.append(includesNight, includesExcursionsTitle, includesExcursionsContainer, includesFeatures);
             inlcudesContainer.append(includesTitle, includesList);
-            textContainer.append(title, description, inlcudesContainer, price);
-            console.log(item)
+            textContainer.append(titleContainer, description, inlcudesContainer, btnContainer);
             container.append(img, textContainer);
             $(".packs-cont").append(container);
         });
