@@ -15,7 +15,6 @@
             renderCachedPage(page, isPageDes, existPage);
             return;
         }
-
         fetchAndRenderPage(page, isPageDes);
     }
     /**
@@ -103,9 +102,7 @@
         if (isPopState) {
             history.pushState({ "pages": page }, '', `/pages/${page}.html`);
         }
-        console.log(page)
         if (page.includes("package")) {
-            console.log("Packages Page");
             setUpPackages();
         }
         isPopState = true;
@@ -210,7 +207,7 @@
         });
     }
     function setUpPackages() {
-        if( packages.length > 0) {
+        if (packages.length > 0) {
             packageBuilder(packages);
             return;
         }
@@ -239,7 +236,7 @@
                 price = $("<span/>").addClass("p-5 text-sm").text("Starting at "),
                 priceValue = $("<span/>").addClass("font-bold").text(item.price),
                 route = $("<button/>").addClass("p-5 text-sm font-medium text-white bg-primary rounded-lg hover:bg-accent hover:cursor-pointer link-btn")
-                        .attr("routes", "des-" + item.packageName).text("Explore " + item.packageName);
+                    .attr("routes", "des-" + item.packageName).text("Explore " + item.packageName);
             item.includes.excursions.forEach((excursion) => {
                 let excursionItem = $("<li/>").text(excursion);
                 includesExcursionsContainer.append(excursionItem);
@@ -253,6 +250,7 @@
             container.append(img, textContainer);
             $(".packs-cont").append(container);
         });
+        attachLinkBtnHandlers();
     }
     /**
      * This handles click effect for switching pages, also hides the
@@ -304,10 +302,3 @@
         }
     });
 })();
-window.addEventListener('scroll', function() {
-    const img = document.querySelector('.parallax-img');
-    if (img) {
-        let scrolled = window.scrollY;
-        img.style.transform = 'translateY(' + (scrolled * 0.3) + 'px)';
-    }
-});
