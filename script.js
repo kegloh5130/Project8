@@ -174,7 +174,6 @@
             $(place).append(container);
         })
     }
-
     /**
      * This builds the destination cards for the other cities
      * @param {Array} dataArr 
