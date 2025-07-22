@@ -4,6 +4,13 @@ body{
     margin: 0rem;
     font-family: "Montserrat", sans-serif;
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+  flex-grow: 1;
 }
 
 @media screen and (min-width: 1300px) and (max-width:1440px){
@@ -71,3 +78,21 @@ body{
 ::-webkit-scrollbar-thumb:hover {
   background:  black; 
 }
+
+
+#S1{
+  display: flex;
+  position: relative;
+  padding: 300px;
+  justify-content: center;
+}
+
+#S1 video{
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  top: 0;
+  overflow: hidden;
+  zoom: 150%;
+}
+
