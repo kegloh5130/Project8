@@ -114,14 +114,24 @@ main{
 .form-group textarea{
   border-radius: 16px;
   padding: 1ex;
-  width: 100%;
+  width: 600px;
+  height: 200px;
    background-color: rgba(50, 88, 88, 0.8);
    font-size: 15px;
    color: white;
+   resize: none;
 }
 
 #btn{
+  justify-self: end;
+  grid-column: 1/-1;
   background-color: #0e2525;
+  color: white;
+  padding: 20px;
+  border-radius: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+  
   
 }
 
