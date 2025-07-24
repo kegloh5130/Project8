@@ -123,6 +123,7 @@ main{
 }
 
 #btn{
+  display: grid;
   justify-self: end;
   grid-column: 1/-1;
   background-color: #0e2525;
