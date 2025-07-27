@@ -7,34 +7,83 @@
 </head>
 <body>
 
+    <section class="bg-black/80 relative p-48  flex overflow-hidden items-center justify-center"> 
+        <p class="font-bold text-3xl text-white">Build Your dream Vacation With Dack Gbay Expansion</p>
+        <img class=" absolute  bg-top -z-10 object-cover object-bottom w-auto h-auto "    src="/img/uhm.jpg" alt="">
+    </section>
 
-<button class="bg-black pb-5 pt-5 pr-10 pl-10 rounded-md mt-10 ml-10 mb-10 text-white" onclick="Barc()">Search</button>
+<section class="p-32 bg-[#0e2525]/80 flex flex-row justify-center items-center">
 
-<Section>
+    <section class="flex flex-col gap-5 text-white p-10 bg-[#0e2525]/60 rounded-lg mr-20 text-center font-light">
+        <p>Unlock more Vacation plans with Dack Gabay Expansion</p>
+    </section>
 
-<div class="text-white bg-black" id="results1">
-    <h1></h1>
-    <img src="" alt="">
-    <p></p>
+    <section class="flex flex-col gap-5 text-white p-10 bg-[#0e2525]/60 rounded-lg text-center font-light">
+        <p>
+            Don't want to visit the Philippines? No problem! With Dack Gabay Expansion, you can now explore destinations worldwide.
+        </p>
+    </section>
+
+    <section class="flex flex-col gap-5 text-white p-10 bg-[#0e2525]/60 rounded-lg ml-20 text-center font-light">
+         <p>
+            Simply choose from our new available locations, find a flight, and book your stay with our trusted partners.
+        </p>
+    </section>
+</section>
+
+
+<section class="flex flex-row justify-center items-center bg-[#0e2525]/70 p-20 gap-10">
+<button class=" Bangalore bg-[#0e2525]/60 pb-5 pt-5 pr-15 pl-15 rounded-md mt-10 ml-10 mb-10 text-white hover:scale-110 transition-all ease-in delay-100" onclick="Bangalore()">Bangalore</button>
+<button class=" London bg-[#0e2525]/60 pb-5 pt-5 pr-15 pl-15 rounded-md mt-10 ml-10 mb-10 text-white hover:scale-110 transition-all ease-in delay-100" onclick="London()">London</button>
+<button class=" Paris bg-[#0e2525]/60  pb-5 pt-5 pr-15 pl-15 rounded-md mt-10 ml-10 mb-10 text-white hover:scale-110 transition-all ease-in delay-100" onclick="Paris()">Paris</button>
+<button class=" Berlin bg-[#0e2525]/60 pb-5 pt-5 pr-15 pl-15 rounded-md mt-10 ml-10 mb-10 text-white hover:scale-110 transition-all ease-in delay-100" onclick="Berlin()">Berlin</button>
+
+</section>
+
+
+
+
+
+
+<Section class="flex flex-col justify-center items-center bg-[#0e2525]/70 p-20 gap-10">
+
+<div class="flex flex-row" id="results1">
+     <img class="min-w-[700px] h-[500px]" src="" alt="">
+    <section class="flex flex-col justify-center items-center p-5">
+    <h1 class="mb-10 font-extrabold text-white"></h1>
+    <p class="text-center text-wrap text-white font-light"></p>
+    </section>
 </div>
 
-<div class="bg-red-500" id="results2">
-    <h1></h1>
-    <img src="" alt="">
-    <p></p>
+<div class=" flex flex-row" id="results2">
+    <img class="min-w-[700px] h-[500px]" src="" alt="">
+    <section class="flex flex-col justify-center items-center p-5">
+    <h1 class="mb-10 font-extrabold text-white"></h1>
+    <p class="text-center text-wrap text-white font-light"></p>
+    </section>
 </div>
 
-<div class="bg-slate-500" id="results3">
-    <h1></h1>
-    <img src="" alt="">
-    <p></p>
+<div class="flex flex-row" id="results3">
+     <img class="min-w-[700px] h-[500px]" src="" alt="">
+    <section class="flex flex-col justify-center items-center p-5">
+    <h1 class="mb-10 font-extrabold text-white"></h1>
+    <p class="text-center text-wrap text-white font-light"></p>
+    </section>
 </div>
-
 
 </Section>
 
 
-
+<section>
+    <form onsubmit=" return false" action="">
+    <input id="first" type="text">
+    <input id="second" type="text">
+    <input id="third" type="date">
+    <input type="number" id="people" min="1" max="20" value="1">
+ </form> 
+    <button onclick="getFlights()" id="search" class="bg-[#0e2525]/60 pb-5 pt-5 pr-15 pl-15 rounded-md mt-10 ml-10 mb-10 text-white hover:scale-110 transition-all ease-in delay-100">Search</button>
+  
+</section>
 
 
 

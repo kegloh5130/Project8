@@ -34,7 +34,10 @@ async function getAccessToken() {
 }
 // Generating a new access token
 
-const Barc = async () => {
+
+
+const Bangalore = async () => {
+  document.querySelector('.Bangalore').classList.add('bg-red-600');
     await fetch('https://test.api.amadeus.com/v1/shopping/activities/by-square?north=13.023577&west=77.536856&south=12.923210&east=77.642256', {
         method: "GET",
         headers: {
@@ -54,24 +57,224 @@ const Barc = async () => {
     }).then(random => {
        console.log(random.data[0].name);
        console.log(random.data[0].pictures[1]);
+       document.querySelector('#results1').classList.add('bg-[#0e2525]/80')
        document.querySelector('#results1 img').src = random.data[0].pictures[0];
        document.querySelector('#results1 h1').innerText = random.data[0].name;
-        document.querySelector('#results1 p').innerText = random.data[0].description;
+        document.querySelector('#results1 p').innerText = random.data[0].description
+         ? random.data[0].description.substring(0, 335) + (random.data[1].description.length > 400 ? '' : ''):
+          '';
         
+
+        document.querySelector('#results2').classList.add('bg-[#0e2525]/80')
         document.querySelector('#results2 img').src = random.data[1].pictures[0];
         document.querySelector('#results2 h1').innerText = random.data[1].name;
-        document.querySelector('#results2 p').innerText = random.data[1].description;
+        document.querySelector('#results2 p').innerText = random.data[1].description
+    ? random.data[1].description.substring(0, 271) + (random.data[1].description.length > 400 ?'' : ''):
+    '';
 
+        document.querySelector('#results3').classList.add('bg-[#0e2525]/80')
         document.querySelector('#results3 img').src = random.data[2].pictures[0];
         document.querySelector('#results3 h1').innerText = random.data[2].name;
-        document.querySelector('#results3 p').innerText = random.data[2].description;
+        document.querySelector('#results3 p').innerText = random.data[2].description
+         ? random.data[2].description.substring(0, 127) + (random.data[2].description.length > 400 ? '' : '')
+         : '';
+
+
     });
+    document.querySelector('.Bangalore').classList.remove('bg-red-600');
+    
+}
+// End of Bangalore function
+
+
+
+const London = async () => {
+  document.querySelector('.London').classList.add('bg-red-600');
+    await fetch('https://test.api.amadeus.com/v1/shopping/activities/by-square?north=51.520180&west=-0.169882&south=51.484703&east=-0.061048', {
+        method: "GET",
+        headers: {
+            "Authorization": "Bearer"+ " " + await getAccessToken(),
+        },
+        mode: "cors",
+        catch: "default"
+    }).then(function (response) {
+        if (response.ok) {
+            console.log('Response is OK');
+            return response.json();
+        }
+        else {
+            const Data = response.json();
+            console.log('Keep pushing');
+        }
+    }).then(random => {
+       console.log(random.data[0].name);
+       console.log(random.data[0].pictures[1]);
+       document.querySelector('#results1').classList.add('bg-[#0e2525]/80')
+       document.querySelector('#results1 img').src = random.data[0].pictures[0];
+       document.querySelector('#results1 h1').innerText = random.data[0].name;
+        document.querySelector('#results1 p').innerText = random.data[0].description
+         ? random.data[0].description.substring(0, 335) + (random.data[1].description.length > 400 ? '' : ''):
+          '';
+        
+
+        document.querySelector('#results2').classList.add('bg-[#0e2525]/80')
+        document.querySelector('#results2 img').src = random.data[1].pictures[0];
+        document.querySelector('#results2 h1').innerText = random.data[1].name;
+        document.querySelector('#results2 p').innerText = random.data[1].description
+    ? random.data[1].description.substring(0, 271) + (random.data[1].description.length > 400 ?'' : ''):
+    '';
+
+        document.querySelector('#results3').classList.add('bg-[#0e2525]/80')
+        document.querySelector('#results3 img').src = random.data[2].pictures[0];
+        document.querySelector('#results3 h1').innerText = random.data[2].name;
+        document.querySelector('#results3 p').innerText = random.data[2].description
+         ? random.data[2].description.substring(0, 127) + (random.data[2].description.length > 400 ? '' : '')
+         : '';
+
+
+    });
+    document.querySelector('.London').classList.remove('bg-red-600');
+    
+}
+// End of London function
+
+
+
+const Paris = async () => {
+  document.querySelector('.Paris').classList.add('bg-red-600');
+    await fetch('https://test.api.amadeus.com/v1/shopping/activities/by-square?north=48.91&west=2.25&south=48.80&east=2.46', {
+        method: "GET",
+        headers: {
+            "Authorization": "Bearer"+ " " + await getAccessToken(),
+        },
+        mode: "cors",
+        catch: "default"
+    }).then(function (response) {
+        if (response.ok) {
+            console.log('Response is OK');
+            return response.json();
+        }
+        else {
+            const Data = response.json();
+            console.log('Keep pushing');
+        }
+    }).then(random => {
+       console.log(random.data[0].name);
+       console.log(random.data[0].pictures[1]);
+       document.querySelector('#results1').classList.add('bg-[#0e2525]/80')
+       document.querySelector('#results1 img').src = random.data[0].pictures[0];
+       document.querySelector('#results1 h1').innerText = random.data[0].name;
+        document.querySelector('#results1 p').innerText = random.data[0].description
+         ? random.data[0].description.substring(0, 335) + (random.data[1].description.length > 400 ? '' : ''):
+          '';
+        
+
+        document.querySelector('#results2').classList.add('bg-[#0e2525]/80')
+        document.querySelector('#results2 img').src = random.data[1].pictures[0];
+        document.querySelector('#results2 h1').innerText = random.data[1].name;
+        document.querySelector('#results2 p').innerText = random.data[1].description
+    ? random.data[1].description.substring(0, 271) + (random.data[1].description.length > 400 ?'' : ''):
+    '';
+
+        document.querySelector('#results3').classList.add('bg-[#0e2525]/80')
+        document.querySelector('#results3 img').src = random.data[2].pictures[0];
+        document.querySelector('#results3 h1').innerText = random.data[2].name;
+        document.querySelector('#results3 p').innerText = random.data[2].description
+         ? random.data[2].description.substring(0, 127) + (random.data[2].description.length > 400 ? '' : '')
+         : '';
+
+
+    });
+    document.querySelector('.Paris').classList.remove('bg-red-600');
+    
 }
 
+// End of Paris function
 
 
 
 
+
+const Berlin = async () => {
+  document.querySelector('.Berlin').classList.add('bg-red-600');
+    await fetch('https://test.api.amadeus.com/v1/shopping/activities/by-square?north=52.541755&west=13.354201&south=52.490569&east=13.457198', {
+        method: "GET",
+        headers: {
+            "Authorization": "Bearer"+ " " + await getAccessToken(),
+        },
+        mode: "cors",
+        catch: "default"
+    }).then(function (response) {
+        if (response.ok) {
+            console.log('Response is OK');
+            return response.json();
+        }
+        else {
+            const Data = response.json();
+            console.log('Keep pushing');
+        }
+    }).then(random => {
+       console.log(random.data[0].name);
+       console.log(random.data[0].pictures[1]);
+       document.querySelector('#results1').classList.add('bg-[#0e2525]/80')
+       document.querySelector('#results1 img').src = random.data[0].pictures[0];
+       document.querySelector('#results1 h1').innerText = random.data[0].name;
+        document.querySelector('#results1 p').innerText = random.data[0].description
+         ? random.data[0].description.substring(0, 335) + (random.data[1].description.length > 400 ? '' : ''):
+          '';
+        
+
+        document.querySelector('#results2').classList.add('bg-[#0e2525]/80')
+        document.querySelector('#results2 img').src = random.data[1].pictures[0];
+        document.querySelector('#results2 h1').innerText = random.data[1].name;
+        document.querySelector('#results2 p').innerText = random.data[1].description
+    ? random.data[1].description.substring(0, 271) + (random.data[1].description.length > 400 ?'' : ''):
+    '';
+
+        document.querySelector('#results3').classList.add('bg-[#0e2525]/80')
+        document.querySelector('#results3 img').src = random.data[2].pictures[0];
+        document.querySelector('#results3 h1').innerText = random.data[2].name;
+        document.querySelector('#results3 p').innerText = random.data[2].description
+         ? random.data[2].description.substring(0, 127) + (random.data[2].description.length > 400 ? '' : '')
+         : '';
+
+
+    });
+    document.querySelector('.Berlin').classList.remove('bg-red-600');
+    
+}
+// End of Berlin function
+
+
+// Start of event listener and fight api calls
+
+
+ 
+
+// ...existing code...
+const getFlights = async () => {
+  const first = document.getElementById('first').value;
+  const second = document.getElementById('second').value;
+  let third = document.getElementById('third').value;
+  const people = document.getElementById('people').value;
+
+  await fetch(`https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=${first}&destinationLocationCode=${second}&departureDate=${third}&adults=${people}&nonStop=false`, {
+    method: "GET",
+    headers: {
+        "Authorization": "Bearer"+ " " + await getAccessToken(),
+    },
+  }).then(function (response) {
+      if (response.ok) {
+          console.log('Response is OK');
+          console.log(response);
+          return response.json();
+      }
+      else {
+          const Data = response.json();
+          console.log('Keep pushing');
+      }
+  })
+}
 
 
 
