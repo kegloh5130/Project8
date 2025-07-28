@@ -136,6 +136,35 @@ main{
   
 }
 
+.form-group2{
+  gap: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.form-group2 label{
+  font-weight: 500;
+  color: white;
+  font-size: 20px;
+}
+
+.form-group2 input{
+  border-radius: 16px;
+  padding: 1ex;
+  width: 100%;
+  background-color: rgba(50, 88, 88, 0.8);
+  text-align:start;
+  font-size: 15px;
+  color: white;
+  
+}
+
+.form-group2 input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
 #vid{
  background-color: black;
 
