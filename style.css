@@ -79,62 +79,9 @@ main{
   background:  black; 
 }
 
-#S2 form{
-  min-width: 700px;
-  display: grid;
-  gap: 1rem;
-  border-radius: 20px;
-  padding: 50px;
 
- 
-}
 
-.form-group{
-  display: grid;
-  gap: 0.5em;
-}
 
-.form-group label{
-  font-weight: 500;
-  color: white;
-  font-size: 20px;
-}
-
-.form-group input{
-  border-radius: 16px;
-  padding: 1ex;
-  width: 100%;
-  background-color: rgba(50, 88, 88, 0.8);
-  text-align:start;
-  font-size: 25px;
-  color: white;
-  
-}
-
-.form-group textarea{
-  border-radius: 16px;
-  padding: 1ex;
-  width: 600px;
-  height: 200px;
-   background-color: rgba(50, 88, 88, 0.8);
-   font-size: 15px;
-   color: white;
-   resize: none;
-}
-
-#btn{
-  display: grid;
-  justify-self: end;
-  grid-column: 1/-1;
-  background-color: #0e2525;
-  color: white;
-  padding: 20px;
-  border-radius: 25px;
-  margin-top: 20px;
-  font-weight: 600;
-  
-  
-}
 
 .form-group2{
   gap: 5px;
@@ -164,6 +111,8 @@ main{
   filter: invert(1);
   cursor: pointer;
 }
+
+
 
 #vid{
  background-color: black;

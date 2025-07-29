@@ -50,3 +50,35 @@ The site offers a user-friendly experience with modern visuals and engaging cont
 ---
 
 This project demonstrates the ability to work collaboratively in teams to build a modern, user-focused frontend application for travel exploration and planning.
+
+
+## New Addition; Dack Gbay Expansion
+- Kodjo Egloh
+
+## Essential
+- Create a travel recommender based off of user input.
+
+## Thought process
+- The webpage theme for travel guide is the Philippines which poses a problem for api usage because the api
+might not have locations specified  to the philippines. My solution to this problem was 'Dack Gbay Expansion'. 
+Essentially expanding location offerings in order to accomodate the specificty of the api
+
+## Amedous Api Used
+- Tours and Activities
+- Flight
+- Hotels
+
+## Locations
+- Bangalore
+- London
+- Paris
+- Berlin
+
+## Implementation
+- Multiple functions call the API based off of specifics that I coded in. For example the Bangalore Api has the
+specification of the Bangalore location based off of latitudes.
+- The code is essentially repetition with slight changes to accomodate seperate locations
+
+## Design choice
+- The design languages follows the same as the website. Mainly implementing flex-box for layout. Using tailwind mainly for styling
+and a bit of CSS for certain sections

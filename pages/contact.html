@@ -8,35 +8,24 @@
 <body>
     
 
-  <section id="S2"  class="flex xl:flex-col justify-center items-center sm:p-40 lg:p-65 bg-[#0e2525]/80   p-20 overflow-hidden    snap-center">
-    <p class=" text-sm   text-white sm:text-sm lg:text-2xl xl:text-3xl  font-extrabold xl:pb-9" id="S2P">Contact Us</p>
+  <section id="S2"  class="flex flex-col xl:flex-col justify-center items-center sm:p-40 lg:p-65 bg-[#0e2525]/80   p-20">
+<p class=" text-2xl  text-white sm:text-sm lg:text-2xl xl:text-3xl  font-extrabold xl:pb-9">Contact Us</p>
 
-
-    
-    <form class="bg-[#0e2525]/60" action="">
-        <section class="form-group">
-            <label for="FirstName">FirstName</label>
-            <input type="text">
-        </section>
-
-         <section class="form-group">
-            <label for="LastName">LastName</label>
-            <input type="text">
-        </section>
-
-         <section class="form-group">
-            <label for="Email">Email</label>
-            <input type="text">
-        </section>
-
-         <section class="form-group">
-            <label for="Message">Message</label>
-            <textarea name="" id=""></textarea>
-        </section>
-
-        <button id="btn"   class="hover:scale-110 transition-all ease-in delay-100">Submit</button>
-
-    </form>
+<form class=" min-w-[300px]  xl:min-w-[700px] grid gap-4 rounded-2xl p-12 bg-[#0e2525]/90  mx-auto">
+  <div class=" grid gap-2">
+    <label class="font-medium text-white text-lg" for="name">Name</label>
+    <input class="rounded-xl px-4 py-2 w-full bg-[#325858cc] text-white text-xl" type="text" id="name" name="name" />
+  </div>
+  <div class=" grid gap-2">
+    <label class="font-medium text-white text-lg" for="email">Email</label>
+    <input class="rounded-xl px-4 py-2 w-full bg-[#325858cc] text-white text-xl" type="email" id="email" name="email" />
+  </div>
+  <div class=" grid gap-2">
+    <label class="font-medium text-white text-lg" for="message">Message</label>
+    <textarea class="rounded-xl px-4 py-2 w-full  xl:h-48 bg-[#325858cc] text-white text-base resize-none" id="message" name="message"></textarea>
+  </div>
+  <button type="submit" class="justify-self-end col-span-full bg-[#0e2525] text-white px-8 py-4 rounded-2xl mt-5 font-semibold hover:bg-[#1a3a3a] transition">Send</button>
+</form>
 
 
 </section>
@@ -45,10 +34,10 @@
 
 
 
-<section id="vid">
+<!-- <section id="vid">
     <video  autoplay loop muted src="/img/travel2.mp4"></video>
     
-    </section>
+    </section> -->
 
 
 

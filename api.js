@@ -7,8 +7,8 @@ async function getAccessToken() {
     },
     body: new URLSearchParams({
       grant_type: 'client_credentials',
-      client_id: '4KmCNpLicyCKAhCZ17mSMUMiGnf40oEj',
-      client_secret: 'L83oxPF8Aa2bTJ8B'
+      client_id: 'HCGEfSj1eX30jw5Va5yQY6Z6uf3f6mAj',
+      client_secret: '0lCM8yMzNETlQCV9'
     })
   });
   const data = await res.json();
@@ -66,7 +66,7 @@ const Bangalore = async () => {
         return `
 
       <section class="text-white text-3xl font-extrabold mb-5 mt-10">Search Flight</section>
-      <form id="form2" class="flex flex-row justify-between items-center p-10" onsubmit="return false" action="">
+      <form id="form2" class="flex flex-col xl:flex-row justify-between items-center p-10" onsubmit="return false" action="">
 
     <section class="form-group2">
     <label for="Departure">Departure</label>
@@ -150,7 +150,7 @@ const London = async () => {
         return `
 
       <section class="text-white text-3xl font-extrabold mb-5 mt-10">Search Flight</section>
-      <form id="form2" class="flex flex-row justify-between items-center p-10" onsubmit="return false" action="">
+      <form id="form2" class="flex flex-col xl:flex-row justify-between items-center p-10" onsubmit="return false" action="">
 
     <section class="form-group2">
     <label for="Departure">Departure</label>
@@ -236,7 +236,7 @@ const Paris = async () => {
         return `
 
       <section class="text-white text-3xl font-extrabold mb-5 mt-10">Search Flight</section>
-      <form id="form2" class="flex flex-row justify-between items-center p-10" onsubmit="return false" action="">
+      <form id="form2" class="flex flex-col items-start xl:flex-row justify-between xl:items-center p-10" onsubmit="return false" action="">
 
     <section class="form-group2">
     <label for="Departure">Departure</label>
@@ -325,7 +325,7 @@ const Berlin = async () => {
         return `
 
       <section class="text-white text-3xl font-extrabold mb-5 mt-10">Search Flight</section>
-      <form id="form2" class="flex flex-row justify-between items-center p-10" onsubmit="return false" action="">
+      <form id="form2" class="flex flex-col xl:flex-row justify-between items-center p-10" onsubmit="return false" action="">
 
     <section class="form-group2">
     <label for="Departure">Departure</label>
@@ -400,7 +400,7 @@ const getFlights1 = async () => {
     return `
     <section class="text-white text-3xl font-extrabold mb-5 mt-10">Flight Result</section>
 
-    <section class=" flex flex-row mt-10 mb-10 bg-[#0e2525]/80 rounded-lg p-10">
+    <section class=" flex flex-col xl:flex-row mt-10 mb-10 bg-[#0e2525]/80 rounded-lg p-10">
 
     <section class="flex flex-col items-center gap-4 bg-[#0e2525]/80 p-20">
         <h1 class="font-bold">Departure</h1>
@@ -425,13 +425,13 @@ const getFlights1 = async () => {
     <span>${price}</span>
     </section>
 
-    <button class=" bg-[#0e2525]/90 p-20 ml-10 text-white font-extrabold  hover:scale-110 transition-all ease-in delay-100">
+    <button class=" bg-[#0e2525]/90 p-20 mt-10 xl:mt-0 xl:ml-10 text-white font-extrabold  hover:scale-110 transition-all ease-in delay-100">
         Book Now
     </button>
 
     </section>
 
-    <section class="text-white text-2xl font-bold mt-20 mb-20">Look for Hotels in the area <button onclick="getHotels1()"  id="searchH" class="bg-[#0e2525]/60 mt-0 mb-5 pb-5 pt-5 font-bold text-xl pr-10 pl-10 rounded-md  text-white hover:scale-110 transition-all ease-in delay-100">Search</button> </section>
+    <section class="text-white text-2xl font-bold mt-20 mb-20 text-center xl:text-balance">Look for Hotels in the area <button onclick="getHotels1()"  id="searchH" class="bg-[#0e2525]/60 mt-0 mb-5 pb-5 pt-5 font-bold text-xl pr-10 pl-10 rounded-md  text-white hover:scale-110 transition-all ease-in delay-100">Search</button> </section>
 `
     }
       document.getElementById('flights-container').innerHTML = three();
@@ -481,7 +481,7 @@ const getFlights2 = async () => {
     return `
     <section class="text-white text-3xl font-extrabold mb-5 mt-10">Flight Result</section>
 
-    <section class=" flex flex-row mt-10 mb-10 bg-[#0e2525]/80 rounded-lg p-10">
+    <section class=" flex flex-col xl:flex-row mt-10 mb-10 bg-[#0e2525]/80 rounded-lg p-10">
 
     <section class="flex flex-col items-center gap-4 bg-[#0e2525]/80 p-20">
         <h1 class="font-bold">Departure</h1>
@@ -506,13 +506,13 @@ const getFlights2 = async () => {
     <span>${price}</span>
     </section>
 
-    <button class=" bg-[#0e2525]/90 p-20 ml-10 text-white font-extrabold  hover:scale-110 transition-all ease-in delay-100">
+    <button class=" bg-[#0e2525]/90 p-20 mt-10 xl:mt-0 xl:ml-10 text-white font-extrabold  hover:scale-110 transition-all ease-in delay-100">
         Book Now
     </button>
 
     </section>
 
-    <section class="text-white text-2xl font-bold mt-20 mb-20">Look for Hotels in the area <button onclick="getHotels2()"  id="searchH" class="bg-[#0e2525]/60 mt-0 mb-5 pb-5 pt-5 font-bold text-xl pr-10 pl-10 rounded-md  text-white hover:scale-110 transition-all ease-in delay-100">Search</button> </section>
+    <section class="text-white text-2xl font-bold mt-20 mb-20 text-center xl:text-balance">Look for Hotels in the area <button onclick="getHotels2()"  id="searchH" class="bg-[#0e2525]/60 mt-0 mb-5 pb-5 pt-5 font-bold text-xl pr-10 pl-10 rounded-md  text-white hover:scale-110 transition-all ease-in delay-100">Search</button> </section>
 `
     }
       document.getElementById('flights-container').innerHTML = three();
@@ -561,7 +561,7 @@ const getFlights3 = async () => {
     return `
     <section class="text-white text-3xl font-extrabold mb-5 mt-10">Flight Result</section>
 
-    <section class=" flex flex-row mt-10 mb-10 bg-[#0e2525]/80 rounded-lg p-10">
+    <section class=" flex flex-col xl:flex-row mt-10 mb-10 bg-[#0e2525]/80 rounded-lg p-10">
 
     <section class="flex flex-col items-center gap-4 bg-[#0e2525]/80 p-20">
         <h1 class="font-bold">Departure</h1>
@@ -586,13 +586,13 @@ const getFlights3 = async () => {
     <span>${price}</span>
     </section>
 
-    <button class=" bg-[#0e2525]/90 p-20 ml-10 text-white font-extrabold  hover:scale-110 transition-all ease-in delay-100">
+    <button class=" bg-[#0e2525]/90 p-20 mt-10 xl:mt-0 xl:ml-10 text-white font-extrabold  hover:scale-110 transition-all ease-in delay-100">
         Book Now
     </button>
 
     </section>
 
-    <section class="text-white text-2xl font-bold mt-20 mb-20">Look for Hotels in the area <button onclick="getHotels3()"  id="searchH" class="bg-[#0e2525]/60 mt-0 mb-5 pb-5 pt-5 font-bold text-xl pr-10 pl-10 rounded-md  text-white hover:scale-110 transition-all ease-in delay-100">Search</button> </section>
+    <section class="text-white text-2xl font-bold mt-20 mb-20 text-center xl:text-balance">Look for Hotels in the area <button onclick="getHotels3()"  id="searchH" class="bg-[#0e2525]/60 mt-0 mb-5 pb-5 pt-5 font-bold text-xl pr-10 pl-10 rounded-md  text-white hover:scale-110 transition-all ease-in delay-100">Search</button> </section>
 `
     }
       document.getElementById('flights-container').innerHTML = three();
@@ -642,7 +642,7 @@ const getFlights4 = async () => {
     return `
     <section class="text-white text-3xl font-extrabold mb-5 mt-10">Flight Result</section>
 
-    <section class=" flex flex-row mt-10 mb-10 bg-[#0e2525]/80 rounded-lg p-10">
+    <section class=" flex flex-col xl:flex-row mt-10 mb-10 bg-[#0e2525]/80 rounded-lg p-10">
 
     <section class="flex flex-col items-center gap-4 bg-[#0e2525]/80 p-20">
         <h1 class="font-bold">Departure</h1>
@@ -667,13 +667,13 @@ const getFlights4 = async () => {
     <span>${price}</span>
     </section>
 
-    <button class=" bg-[#0e2525]/90 p-20 ml-10 text-white font-extrabold  hover:scale-110 transition-all ease-in delay-100">
+    <button class=" bg-[#0e2525]/90 p-20 mt-10 xl:mt-0 xl:ml-10 text-white font-extrabold  hover:scale-110 transition-all ease-in delay-100">
         Book Now
     </button>
 
     </section>
 
-    <section class="text-white text-2xl font-bold mt-20 mb-20">Look for Hotels in the area <button onclick="getHotels4()"  id="searchH" class="bg-[#0e2525]/60 mt-0 mb-5 pb-5 pt-5 font-bold text-xl pr-10 pl-10 rounded-md  text-white hover:scale-110 transition-all ease-in delay-100">Search</button> </section>
+    <section class="text-white text-2xl font-bold mt-20 mb-20 text-center xl:text-balance">Look for Hotels in the area <button onclick="getHotels4()"  id="searchH" class="bg-[#0e2525]/60 mt-0 mb-5 pb-5 pt-5 font-bold text-xl pr-10 pl-10 rounded-md  text-white hover:scale-110 transition-all ease-in delay-100">Search</button> </section>
 `
     }
       document.getElementById('flights-container').innerHTML = three();
@@ -721,8 +721,8 @@ const getHotels1 = async () =>{
     const hotels = ()=>{
       return`
 
-    <section class="text-white text-3xl font-extrabold mb-5 mt-10">Hotel Results</section>
-    <section class="flex flex-row justify-between gap-10 mt-10 mb-20  items-center">
+    <section class="text-white text-lg xl:text-3xl font-extrabold mb-5 mt-10">Hotel Results</section>
+    <section class="flex flex-col xl:flex-row justify-between gap-10 mt-10 mb-20  items-center">
        <section class="flex flex-col items-center gap-4 bg-[#0e2525]/80 p-20 text-white rounded-lg">
         <h1 class="font-bold">${hotelname1}</h1>
         <span>${hotelcity1}</span>
@@ -785,8 +785,8 @@ const getHotels2 = async () =>{
     const hotels = ()=>{
       return`
 
-    <section class="text-white text-3xl font-extrabold mb-5 mt-10">Hotel Results</section>
-    <section class="flex flex-row justify-between gap-10 mt-10 mb-20  items-center">
+    <section class="text-white text-lg xl:text-3xl font-extrabold mb-5 mt-10">Hotel Results</section>
+    <section class="flex flex-col xl:flex-row justify-between gap-10 mt-10 mb-20  items-center">
        <section class="flex flex-col items-center gap-4 bg-[#0e2525]/80 p-20 text-white rounded-lg">
         <h1 class="font-bold">${hotelname1}</h1>
         <span>${hotelcity1}</span>
@@ -848,8 +848,8 @@ const getHotels3 = async () =>{
     const hotels = ()=>{
       return`
 
-    <section class="text-white text-3xl font-extrabold mb-5 mt-10">Hotel Results</section>
-    <section class="flex flex-row justify-between gap-10 mt-10 mb-20  items-center">
+    <section class="text-white text-md xl:text-3xl font-extrabold mb-5 mt-10">Hotel Results</section>
+    <section class="flex flex-col xl:flex-row justify-between gap-10 mt-10 mb-20  items-center">
        <section class="flex flex-col items-center gap-4 bg-[#0e2525]/80 p-20 text-white rounded-lg">
         <h1 class="font-bold">${hotelname1}</h1>
         <span>${hotelcity1}</span>
@@ -911,9 +911,9 @@ const getHotels4 = async () =>{
     const hotels = ()=>{
       return`
 
-    <section class="text-white text-3xl font-extrabold mb-5 mt-10">Hotel Results</section>
+    <section class="text-white text-md xl:text-3xl font-extrabold mb-5 mt-10">Hotel Results</section>
     <section class="flex flex-row justify-between gap-10 mt-10 mb-20  items-center">
-       <section class="flex flex-col items-center gap-4 bg-[#0e2525]/80 p-20 text-white rounded-lg">
+       <section class="flex flex-col xl:flex-col items-center gap-4 bg-[#0e2525]/80 p-20 text-white rounded-lg">
         <h1 class="font-bold">${hotelname1}</h1>
         <span>${hotelcity1}</span>
         <button class="mt-10 pr-10 pl-10 pt-5 pb-5 bg-[#0e2525]/80 rounded-md hover:scale-110 transition-all ease-in delay-100">Book</button>

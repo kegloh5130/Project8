@@ -1,144 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 </head>
+
 <body>
 
-    <section class="bg-black/80 relative p-48  flex overflow-hidden items-center justify-center"> 
-        <p class="font-bold text-3xl text-white">Build Your dream Vacation With Dack Gbay Expansion</p>
-        <img class=" absolute  bg-top -z-10 object-cover object-bottom w-auto h-auto "    src="/img/uhm.jpg" alt="">
+    <section class="bg-black/80 relative p-40   xl:p-48  flex overflow-hidden items-center justify-center">
+        <h1 class="font-bold min-w-[450px] xl:text-3xl text-white text-balance text-center  ">Build Your dream Vacation
+            With Dack Gbay Expansion</h1>
+        <img class=" absolute  bg-top -z-10 object-cover object-bottom w-auto min-h-[500px] xl:h-auto "
+            src="/img/uhm.jpg" alt="">
     </section>
 
-<section class="p-32 bg-[#0e2525]/80 flex flex-row justify-center items-center">
+    <section class="p-32 bg-[#0e2525]/80 gap-5 flex flex-col xl:flex-row items-center">
 
-    <section class="flex flex-col gap-5 text-white p-10 bg-[#0e2525]/60 rounded-lg mr-20 text-center font-light">
-        <p>Unlock more Vacation plans with Dack Gabay Expansion</p>
+        <section
+            class=" pl-10 pr-10 pt-5 pb-5   xl:gap-5 text-white xl:p-10 bg-[#0e2525]/60 rounded-lg xl:mr-20 xl:text-center font-light">
+            <p class="w-[300px] xl:w-auto">Unlock more Vacation plans with Dack Gabay Expansion</p>
+        </section>
+
+        <section class="flex p-5  xl:gap-5 text-white xl:p-10 bg-[#0e2525]/60 rounded-lg text-center font-light">
+            <p class="w-[350px] xl:w-auto">
+                Don't want to visit the Philippines? No problem! With Dack Gabay Expansion, you can now explore
+                destinations worldwide.
+            </p>
+        </section>
+
+        <section class="flex  p-5  xl:gap-5 text-white xl:p-10 bg-[#0e2525]/60 rounded-lg xl:ml-20 text-center font-light">
+            <p class="w-[350px] xl:w-auto">
+                Simply choose from our new available locations, find a flight, and book your stay with our trusted
+                partners.
+            </p>
+        </section>
     </section>
 
-    <section class="flex flex-col gap-5 text-white p-10 bg-[#0e2525]/60 rounded-lg text-center font-light">
-        <p>
-            Don't want to visit the Philippines? No problem! With Dack Gabay Expansion, you can now explore destinations worldwide.
-        </p>
+
+    <section class="flex flex-col xl:flex-row justify-center space-y-5 items-center bg-[#0e2525]/70 xl:p-20 xl:gap-10">
+        <button
+            class=" Bangalore bg-[#0e2525]/60 pb-5 pt-5 pr-15 pl-15 mt-5 rounded-md xl:mt-10 xl:ml-10 xl:mb-10 text-white hover:scale-110 transition-all ease-in delay-100"
+            onclick="Bangalore()">Bangalore</button>
+        <button
+            class=" London bg-[#0e2525]/60 pb-5 pt-5 pr-15 pl-15 rounded-md xl:mt-10 xl:ml-10 xl:mb-10 text-white hover:scale-110 transition-all ease-in delay-100"
+            onclick="London()">London</button>
+        <button
+            class=" Paris bg-[#0e2525]/60  pb-5 pt-5 pr-15 pl-15 rounded-md xl:mt-10 xl:ml-10 xl:mb-10 text-white hover:scale-110 transition-all ease-in delay-100"
+            onclick="Paris()">Paris</button>
+        <button
+            class=" Berlin bg-[#0e2525]/60 pb-5 pt-5 pr-15 pl-15 rounded-md xl:mt-10 xl:ml-10 xl:mb-10 text-white hover:scale-110 transition-all ease-in delay-100"
+            onclick="Berlin()">Berlin</button>
+
     </section>
 
-    <section class="flex flex-col gap-5 text-white p-10 bg-[#0e2525]/60 rounded-lg ml-20 text-center font-light">
-         <p>
-            Simply choose from our new available locations, find a flight, and book your stay with our trusted partners.
-        </p>
-    </section>
-</section>
-
-
-<section class="flex flex-row justify-center items-center bg-[#0e2525]/70 p-20 gap-10">
-<button class=" Bangalore bg-[#0e2525]/60 pb-5 pt-5 pr-15 pl-15 rounded-md mt-10 ml-10 mb-10 text-white hover:scale-110 transition-all ease-in delay-100" onclick="Bangalore()">Bangalore</button>
-<button class=" London bg-[#0e2525]/60 pb-5 pt-5 pr-15 pl-15 rounded-md mt-10 ml-10 mb-10 text-white hover:scale-110 transition-all ease-in delay-100" onclick="London()">London</button>
-<button class=" Paris bg-[#0e2525]/60  pb-5 pt-5 pr-15 pl-15 rounded-md mt-10 ml-10 mb-10 text-white hover:scale-110 transition-all ease-in delay-100" onclick="Paris()">Paris</button>
-<button class=" Berlin bg-[#0e2525]/60 pb-5 pt-5 pr-15 pl-15 rounded-md mt-10 ml-10 mb-10 text-white hover:scale-110 transition-all ease-in delay-100" onclick="Berlin()">Berlin</button>
-
-</section>
 
 
 
 
 
+    <Section class="flex flex-col justify-center items-center bg-[#0e2525]/70 p-10 xl:p-20 gap-10">
 
-<Section class="flex flex-col justify-center items-center bg-[#0e2525]/70 p-20 gap-10">
+        <section class="flex flex-col items-center xl:flex-row" id="results1">
+            <img class="min-w-200px h-100px   xl:min-w-[700px] xl:h-[500px]" src="" alt="">
+            <section class="flex flex-col justify-center items-center p-5">
+                <h1 class="mb-10 font-extrabold text-white"></h1>
+                <p class="text-center text-wrap text-white font-light"></p>
+            </section>
+        </section>
 
-<div class="flex flex-row" id="results1">
-     <img class="min-w-[700px] h-[500px]" src="" alt="">
-    <section class="flex flex-col justify-center items-center p-5">
-    <h1 class="mb-10 font-extrabold text-white"></h1>
-    <p class="text-center text-wrap text-white font-light"></p>
-    </section>
-</div>
+        <section class=" flex flex-col xl:flex-row" id="results2">
+            <img class="min-w-200px h-100px   xl:min-w-[700px] xl:h-[500px]" src="" alt="">
+            <section class="flex flex-col justify-center items-center p-5">
+                <h1 class="mb-10 font-extrabold text-white"></h1>
+                <p class="text-center text-wrap text-white font-light"></p>
+            </section>
+        </section>
 
-<div class=" flex flex-row" id="results2">
-    <img class="min-w-[700px] h-[500px]" src="" alt="">
-    <section class="flex flex-col justify-center items-center p-5">
-    <h1 class="mb-10 font-extrabold text-white"></h1>
-    <p class="text-center text-wrap text-white font-light"></p>
-    </section>
-</div>
+        <section class="flex flex-col xl:flex-row" id="results3">
+            <img class="min-w-200px h-100px    xl:min-w-[700px] xl:h-[500px]" src="" alt="">
+            <section class="flex flex-col justify-center items-center p-5">
+                <h1 class="mb-10 font-extrabold text-white"></h1>
+                <p class="text-center text-wrap text-white font-light"></p>
+            </section>
+        </section>
 
-<div class="flex flex-row" id="results3">
-     <img class="min-w-[700px] h-[500px]" src="" alt="">
-    <section class="flex flex-col justify-center items-center p-5">
-    <h1 class="mb-10 font-extrabold text-white"></h1>
-    <p class="text-center text-wrap text-white font-light"></p>
-    </section>
-</div>
-
-</Section>
+    </Section>
 
 
-<section id="flightsearch"    class="flex flex-col justify-center items-center  bg-[#0e2525]/80">
-    <!-- <form onsubmit=" return false" action="">
-
-    <section>
-    <label for="Departure"></label>
-    <input id="first" type="text">
+    <section id="flightsearch" class="flex flex-col justify-center items-center  bg-[#0e2525]/80">
+        <!-- Area for flight searching appends here -->
     </section>
 
-    <section>
-    <label for="Arrival"></label>
-    <input id="second" type="text">
+
+    <section id="flights-container" class="flex flex-col justify-evenly items-center bg-[#0e2525]/70   text-white">
+        <!-- Flight results will be appended here -->
     </section>
 
-    <section>
-    <label for="Date"></label>
-    <input id="third" type="date">
+
+
+    <section id="hotels-container" class="flex flex-col justify-evenly items-center bg-[#0e2525]/80 ">
+        <!-- Hotel results will be appended here -->
     </section>
 
-    <section>
-    <label for="People"></label>
-    <input type="number" id="people" min="1" max="20" value="1">
-    </section>
- </form> 
-    <button onclick="getFlights()" id="search" class="bg-[#0e2525]/60 pb-5 pt-5 pr-15 pl-15 rounded-md mt-10 ml-10 mb-10 text-white hover:scale-110 transition-all ease-in delay-100">Search</button> -->
-</section>
-
-
-
-
- <div id="flights-container" class="flex flex-col justify-evenly items-center bg-[#0e2525]/70   text-white">
-            <!-- Flight results will be appended here -->
- </div>
-   
-
-
-<section id="hotels-container" class="flex flex-col justify-evenly items-center bg-[#0e2525]/80 ">
-
-    <!-- <section class="flex flex-col items-center gap-4 bg-[#0e2525]/80 p-20 text-white rounded-lg">
-        <h1 class="font-bold">${hotelname1}</h1>
-        <span>${hotelcity1}</span>
-        <button class="mt-10 pr-10 pl-10 pt-5 pb-5 bg-[#0e2525]/80 rounded-md">Book</button>
-    </section>
-
-    <section class="flex flex-col items-center gap-4 bg-[#0e2525]/80 p-20 text-white rounded-lg">
-        <h1 class="font-bold">${hotelname2}</h1>
-        <span>${hotelcity2}</span>
-        <button class="mt-10 pr-10 pl-10 pt-5 pb-5 bg-[#0e2525]/80 rounded-md">Book</button>
-    </section>
-
-      <section class="flex flex-col items-center gap-4 bg-[#0e2525]/80 p-20 text-white rounded-lg">
-        <h1 class="font-bold">${hotelname3}</h1>
-        <span>${hotelcity3}</span>
-        <button class="mt-10 pr-10 pl-10 pt-5 pb-5 bg-[#0e2525]/80 rounded-md">Book</button>
-    </section> -->
-
-
-</section>
 
 
 
 
 
- 
 
-<script src="/api.js"></script>
-<script src="/routerHandle.js"></script>  
+    <script src="/api.js"></script>
+    <script src="/routerHandle.js"></script>
 </body>
+
 </html>
