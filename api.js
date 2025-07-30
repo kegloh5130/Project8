@@ -66,7 +66,7 @@ const Bangalore = async () => {
         return `
 
       <section class="text-white text-3xl font-extrabold mb-5 mt-10">Search Flight</section>
-      <form id="form2" class="flex flex-col xl:flex-row justify-between items-center p-10" onsubmit="return false" action="">
+      <form id="form2" class="flex flex-col items-start xl:flex-row justify-between xl:items-center p-10" onsubmit="return false" action="">
 
     <section class="form-group2">
     <label for="Departure">Departure</label>
@@ -150,7 +150,7 @@ const London = async () => {
         return `
 
       <section class="text-white text-3xl font-extrabold mb-5 mt-10">Search Flight</section>
-      <form id="form2" class="flex flex-col xl:flex-row justify-between items-center p-10" onsubmit="return false" action="">
+      <form id="form2" class="flex flex-col items-start xl:flex-row justify-between xl:items-center p-10" onsubmit="return false" action="">
 
     <section class="form-group2">
     <label for="Departure">Departure</label>
@@ -325,7 +325,7 @@ const Berlin = async () => {
         return `
 
       <section class="text-white text-3xl font-extrabold mb-5 mt-10">Search Flight</section>
-      <form id="form2" class="flex flex-col xl:flex-row justify-between items-center p-10" onsubmit="return false" action="">
+      <form id="form2" class="flex flex-col items-start xl:flex-row justify-between xl:items-center p-10" onsubmit="return false" action="">
 
     <section class="form-group2">
     <label for="Departure">Departure</label>
