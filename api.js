@@ -14,13 +14,18 @@ async function getAccessToken() {
   const data = await res.json();
   console.log('Access Token:', data.access_token);
   return data.access_token;
+
 }
+
+
+
 // Generating a new access token
 
 
 // start of Bangalore function
 const Bangalore = async () => {
   document.querySelector('.Bangalore').classList.add('bg-red-600');
+  document.querySelector('.Bangalore').innerText = 'Loading';
     await fetch('https://test.api.amadeus.com/v1/shopping/activities/by-square?north=13.023577&west=77.536856&south=12.923210&east=77.642256', {
         method: "GET",
         headers: {
@@ -95,15 +100,20 @@ const Bangalore = async () => {
       }
       document.getElementById('flightsearch').innerHTML = marble();
     });
-    
     document.querySelector('.Bangalore').classList.remove('bg-red-600');
+    document.querySelector('.Bangalore').innerText = 'Bangalore';
+   
+
+
 }
+
 // End of Bangalore function
 
 
 // start of London function
 const London = async () => {
   document.querySelector('.London').classList.add('bg-red-600');
+  document.querySelector('.London').innerText = 'Loading';
     await fetch('https://test.api.amadeus.com/v1/shopping/activities/by-square?north=51.520180&west=-0.169882&south=51.484703&east=-0.061048', {
         method: "GET",
         headers: {
@@ -182,6 +192,7 @@ const London = async () => {
 
     });
     document.querySelector('.London').classList.remove('bg-red-600');
+    document.querySelector('.London').innerText = 'London';
     
 }
 // End of London function
@@ -190,6 +201,7 @@ const London = async () => {
 // start of Paris function
 const Paris = async () => {
   document.querySelector('.Paris').classList.add('bg-red-600');
+  document.querySelector('.Paris').innerText = 'Loading';
     await fetch('https://test.api.amadeus.com/v1/shopping/activities/by-square?north=48.91&west=2.25&south=48.80&east=2.46', {
         method: "GET",
         headers: {
@@ -268,6 +280,7 @@ const Paris = async () => {
 
     });
     document.querySelector('.Paris').classList.remove('bg-red-600');
+    document.querySelector('.Paris').innerText = 'Paris';
     
 }
 
@@ -279,6 +292,7 @@ const Paris = async () => {
 // start of Berlin function
 const Berlin = async () => {
   document.querySelector('.Berlin').classList.add('bg-red-600');
+  document.querySelector('.Berlin').innerText = 'Loading';
     await fetch('https://test.api.amadeus.com/v1/shopping/activities/by-square?north=52.541755&west=13.354201&south=52.490569&east=13.457198', {
         method: "GET",
         headers: {
@@ -357,6 +371,7 @@ const Berlin = async () => {
 
     });
     document.querySelector('.Berlin').classList.remove('bg-red-600');
+    document.querySelector('.Berlin').innerText = 'Berlin';
     
 }
 // End of Berlin function
