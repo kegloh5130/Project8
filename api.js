@@ -12,7 +12,6 @@ async function getAccessToken() {
     })
   });
   const data = await res.json();
-  console.log('Access Token:', data.access_token);
   return data.access_token;
 
 }
@@ -39,7 +38,6 @@ const Bangalore = async () => {
             return response.json();
         }
         else {
-            const Data = response.json();
             console.log('Keep pushing');
         }
     }).then(random => {
@@ -127,7 +125,6 @@ const London = async () => {
             return response.json();
         }
         else {
-            const Data = response.json();
             console.log('Keep pushing');
         }
     }).then(random => {
@@ -215,7 +212,6 @@ const Paris = async () => {
             return response.json();
         }
         else {
-            const Data = response.json();
             console.log('Keep pushing');
         }
     }).then(random => {
@@ -306,7 +302,6 @@ const Berlin = async () => {
             return response.json();
         }
         else {
-            const Data = response.json();
             console.log('Keep pushing');
         }
     }).then(random => {
@@ -399,7 +394,6 @@ const getFlights1 = async () => {
           return response.json();
       }
       else {
-          const Data = response.json();
           console.log('Keep pushing');
       }
   }).then(fight => {
@@ -480,7 +474,6 @@ const getFlights2 = async () => {
           return response.json();
       }
       else {
-          const Data = response.json();
           console.log('Keep pushing');
       }
   }).then(fight => {
@@ -560,7 +553,6 @@ const getFlights3 = async () => {
           return response.json();
       }
       else {
-          const Data = response.json();
           console.log('Keep pushing');
       }
   }).then(fight => {
@@ -641,7 +633,6 @@ const getFlights4 = async () => {
           return response.json();
       }
       else {
-          const Data = response.json();
           console.log('Keep pushing');
       }
   }).then(fight => {
